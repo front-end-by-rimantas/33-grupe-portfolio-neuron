@@ -6,34 +6,37 @@
 /* header end */
 
 /* hero start */
-/* hero end */
+/* hero end --> */
 
-/* top logos start */
-/* top logos end */
+/* about block 1 start */
+/* about block 1 end */
 
-/* about cards start */
-/* about cards end */
+/* about block 2 start */
+/* about block 2 end */
 
-/* about progress-bars start */
-/* about progress-bars end */
+/* counter block start */
+/* counter block end */
 
-/* services start */
-/* services end */
+/* services block start */
+/* services block end */
 
-/* why choose us start */
-/* why choose us end */
+/* our latest proget start */
+/* our latest proget end */
 
-/* contact start */
-/* contact end */
+/* subscribe block start */
+/* subscribe block end */
 
-/* blog start */
-/* blog end */
+/* logo block start */
+/* logo block end */
 
-/* testimonials start */
-/* testimonials end */
+/* how we work block start */
+/* how we work block end */
 
-/* bottom logos start */
-/* bottom logos end */
+/* recent block start */
+/* recent block logos end */
+
+/* contact block start */
+/* contact block logos end */
 
 /* footer start */
 /* footer end */
