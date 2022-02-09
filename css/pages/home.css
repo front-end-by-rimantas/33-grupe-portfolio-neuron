@@ -20,6 +20,40 @@
 /* about block 1 end */
 
 /* about block 2 start */
+.container {
+    display: flex; /* or inline-flex */
+}
+.about2_a_lm{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--white);
+    background-color: var(--blue);
+    border-radius: 50em;
+    height: 40px;
+    width: 140px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+.about2_video{
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid var(--blue);
+    display: block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    /* padding: 20px 20px; */
+}
+.popup .popupvid {
+    visibility: hidden;
+  }
+  .popup .show {
+    visibility: visible;
+  }
+  
 /* about block 2 end */
 
 /* counter block start */

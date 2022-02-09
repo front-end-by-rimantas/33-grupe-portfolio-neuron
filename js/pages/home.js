@@ -12,6 +12,9 @@
 /* about block 1 end */
 
 /* about block 2 start */
+function video() {
+    let popup = document.getElementById("vidPopup");
+    popup.classList.toggle("show");}
 /* about block 2 end */
 
 /* counter block start */
