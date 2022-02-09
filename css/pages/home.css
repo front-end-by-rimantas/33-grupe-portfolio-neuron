@@ -22,6 +22,7 @@
 /* about block 2 start */
 .container {
     display: flex; /* or inline-flex */
+    gap: 10px 20px;
 }
 .about2_a_lm{
     text-decoration: none;
@@ -49,10 +50,22 @@
 }
 .popup .popupvid {
     visibility: hidden;
-  }
+}
   .popup .show {
     visibility: visible;
-  }
+}
+.closeVid{
+    position: absolute;
+    right: 8vw;
+    top:8vh;
+}
+.vid{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    height: 80vh;
+    width: 80vw;
+}
   
 /* about block 2 end */
 
