@@ -17,6 +17,13 @@
 /* hero end --> */
 
 /* about block 1 start */
+.row {
+    background-color: aqua;
+}
+.col-12 {
+    background-color: red;
+}
+
 /* about block 1 end */
 
 /* about block 2 start */
