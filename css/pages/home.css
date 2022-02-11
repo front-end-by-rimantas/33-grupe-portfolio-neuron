@@ -80,11 +80,18 @@
 @media (min-width: 300px) {
     .button {
         width: 25%;
-        font-size: 1em;
-        padding: 0.2em 0em;
+        font-size: 0.8em;
+        padding: 0;
         display: inline-block;
-
     }
+    .hero-text-h1 {
+        font-size: 2.2em;
+    }
+    .hero-text-h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
 }
 
 
