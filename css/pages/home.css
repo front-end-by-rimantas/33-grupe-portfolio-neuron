@@ -73,6 +73,20 @@
 .robotukas {
     margin-top: 8%;
 }
+.plotis {
+    width: 20vw;
+}
+
+@media (min-width: 300px) {
+    .button {
+        width: 25%;
+        font-size: 1em;
+        padding: 0.2em 0em;
+        display: inline-block;
+
+    }
+}
+
 
 
 /* hero end --> */
