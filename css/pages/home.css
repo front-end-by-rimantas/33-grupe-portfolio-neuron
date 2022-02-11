@@ -11,12 +11,248 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header start */
+/*toolbar start*/
+header .block{
+    padding: 0;
+}
+header .block .toolbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+header{
+    background-color: #0494e3;
+    
+}
+.contacts  > ul > li{
+    display: inline-block;
+    margin-right: 25px;
+    color: #fff;
+}
+.contacts{
+   
+}
+.contacts > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contacts  > ul > li > a{
+    transition: all 0.5s ease 0s;
+    color: #fff;
+    line-height: 0.85;
+    text-decoration: none;
+}
+.contacts  > ul > li > i{
+    margin-right: 10px;
+    color: #fff;
+}
+.icons > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+ .icons > ul > li{
+    display: inline-block;
+}
+.icons > ul > li.falow{
+    color: #fff;
+  font-size: 13px;
+}
+.icons > ul > li + li{
+    margin-left: 15px;
+}
+.icons > ul > li > a{
+    display: block;
+    text-decoration: none;
+}
+.icons > ul > li > a > i{
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+} 
+hr{
+    margin: 10px 0 0;
+    border-color: #0494e3;
+    opacity: 0.5
+}
+header .block-2{
+    padding: 0;
+}
+header .block-2 .navigation{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+.block-2 .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block-2 .navigation ul{
+    display: flex;
+    align-items: center;
+     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.block-2 .navigation .menu ul{
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    gap: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.block-2 .navigation .menu ul li a{
+    color: #fff;
+    line-height: 0.85;
+    text-decoration: none;
+}
+.block-2 .navigation .menu ul li{
+    display: inline-block;
+}
+.block-2 .navigation .menu ul li a + a{
+    margin-left: 15px;
+}
+.block-2 > .navigation > .menu{
+        display: flex;
+        justify-content: end;
+        gap: 50px;
+}
+.block-2 > .navigation > .shop{
+
+}
+.shop > ul > li{
+    margin-left: 10px;
+}
+.shop > ul > li > a{
+  margin-left: 10px;
+}
+.shop > ul > li > a > i{
+    margin-right: 10px;
+    color: #fff;
+}
+.menu-area{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*toolbar start*/
 /* header end */
 
 /* hero start */
 /* hero end --> */
 
 /* about block 1 start */
+
+.container-about {
+    font-size: 15px;
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 26px;
+}
+.row-about {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.short-about {
+    padding: 40px 25px 25px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.7s ease 0s;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 2px 10px 50px rgb(158 158 158 / 25%);
+}
+
+.short-about:hover {
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+    color: white;
+    opacity: 1;
+    transition: 0.7s;
+}
+img {
+    width: 100px;
+    padding: 1em;
+}
+
+.column > .column-right {
+    margin-top: 100px;
+}
+
+.description p {
+    margin: 0 0 26px;
+}
+
+.text-about > .text-about-description {
+    margin: 0 0 26px;
+    line-height: 2em;
+    margin-top: 100px;
+}
+.text-about > .text-about-description > h2 {
+    font-weight: 600;
+    position: relative;
+    font-size: 42px;
+    margin: 0 0 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+.text-about-description p:nth-of-type(2) {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
+.text-about-description > h2:before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    top: 35px;
+    z-index: -1;
+}
+.btn-about {
+    padding: 1em 2em;
+    font-size: 16px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, var(--blue) 30%, var(--teal) 60%);
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 50px;
+}
+
+.btn-about:hover {
+    background: linear-gradient(41deg, var(--teal) 30%, var(--blue));
+    z-index: 1;
+    transition: all 0.7s ease 0s;
+}
+
 /* about block 1 end */
 
 /* about block 2 start */
