@@ -14,6 +14,66 @@
 /* header end */
 
 /* hero start */
+
+.hero-background {
+    background-color: var(--blue);
+    background-image: url("../../img/background-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text-h1 {
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 600;
+}
+.hero-text-h2 {
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.hero-txt-box {
+    margin-top: 21%;
+}
+
+.button {
+    width: 13vw;
+    border-radius: 5vw;
+    border: 2px solid white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.9em 1.2em;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.button1 {
+    background-color: var(--white);
+    color: #01a0f9;
+}
+.button1:hover {
+    background-color: transparent;
+    color: var(--white);
+}
+.button2 {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.button2:hover {
+    background-color: var(--white);
+    color: #01a0f9;
+}
+
+.zmogiukai {
+    margin-top: 15%;
+}
+.robotukas {
+    margin-top: 8%;
+}
+
 /* hero end --> */
 
 /* about block 1 start */
