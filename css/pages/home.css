@@ -419,6 +419,35 @@ header .block-2 .navigation {
 /* about block 2 end */
 
 /* counter block start */
+.counter {
+    background-image: url("../../img/counter\ bckgrnd.png");
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+}
+.counter-txt {
+    color: var(--white);
+}
+.counter-father {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap:2.5em;
+}
+.counter-text1 {
+    margin-left: 10%;
+}
+.counter-text2 {
+    margin-left: 10%;
+}
+.counter-h1 {
+    font-size: 2em;
+}
+.counter-h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
 /* counter block end */
 
 /* services block start */
