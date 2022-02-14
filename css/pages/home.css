@@ -233,24 +233,17 @@ header .block-2 .navigation {
 
 .container-about {
     font-size: 15px;
-    color: #666666;
+    color: var(--gray-dark);
     font-family: 'Poppins', sans-serif;
     vertical-align: baseline;
     font-weight: 400;
     overflow-x: hidden;
     line-height: 26px;
 }
-/*.row-about {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-*/
+
 .short-about {
     padding: 40px 25px 25px;
-    background: white;
+    background: var(--light);
     border-radius: 10px;
     transition: all 0.7s ease 0s;
     position: relative;
@@ -261,7 +254,7 @@ header .block-2 .navigation {
 
 .short-about:hover {
     background: linear-gradient(-41deg, var(--teal), var(--blue));
-    color: white;
+    color: var(--light);
     opacity: 1;
     transition: 0.7s;
 }
@@ -274,7 +267,7 @@ header .block-2 .navigation {
     margin-top: 100px;
 }
 
-.description p {
+.description {
     margin: 0 0 26px;
 }
 
@@ -313,7 +306,7 @@ header .block-2 .navigation {
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
-    color: #fff;
+    color: var(--light);
     background: linear-gradient(90deg, var(--blue) 30%, var(--teal) 60%);
     transition: all 0.7s ease 0s;
     cursor: pointer;
@@ -333,6 +326,7 @@ header .block-2 .navigation {
 }
 .column-service {
     text-align: center;
+    margin-bottom: 0;
 }
 .column-service > .big-title:before {
     content: '';
@@ -346,14 +340,29 @@ header .block-2 .navigation {
     transform: translateX(-50%);
 }
 
+.icon-services {
+    margin-bottom: 2em;
+}
+
 @media (min-width: 767px) {
     .services {
         grid-template-columns: 1fr 1fr;
+    }
+    .column > .column-right {
+        margin-top: 0;
     }
 }
 @media (min-width: 991px) {
     .services {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .column > .column-right {
+        margin-top: 0;
+    }
+}
+@media (min-width: 575px) {
+    .column > .column-right {
+        margin-top: 0;
     }
 }
 
