@@ -16,12 +16,12 @@
 
 /* hero start */
 
-.hero-background {
+/* .hero-background {
     background-color: var(--blue);
     background-image: url('../../img/background-hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .hero-text-h1 {
     color: var(--white);
