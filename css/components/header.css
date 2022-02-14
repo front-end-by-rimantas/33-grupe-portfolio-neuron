@@ -1,15 +1,16 @@
 .block{
     padding: 0;
 }
- .toolbar{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+.container-fluid >  .toolbar{
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0;
+    margin-top: 10px;
+   
 }
-header{
+.header{
     background-color: #0494e3;
-    
+    opacity: 1;
 }
 .contacts  > ul > li{
     display: inline-block;
@@ -24,12 +25,14 @@ header{
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
 }
 .contacts  > ul > li > a{
     transition: all 0.5s ease 0s;
     color: #fff;
     line-height: 0.85;
+    font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
 }
 .contacts  > ul > li > i{
@@ -42,7 +45,7 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    padding: 0; 
+    padding: 15px; 
 }
  .icons > ul > li{
     display: inline-block;
@@ -61,14 +64,15 @@ header{
 .icons > ul > li > a > i{
     text-align: center;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     transition: all 0.5s ease 0s;
 } 
 hr{
     margin: 10px 0 0;
     border-color: #0494e3;
-    opacity: 0.5
+    opacity: 0.5;
+    
 }
 .block-2{
     padding: 0;
@@ -76,63 +80,66 @@ hr{
 .logo{
     height: auto;
     max-width: 100%;
-}
-header .block-2 .navigation{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px 0;
+    padding: 15px;
 }
 .block-2 .navigation{
     display: flex;
     align-items: center;
-     
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    padding-left: 50px;
+    padding-right: 45px;
 }
-.block-2 .navigation ul{
+.navigation ul{
     display: flex;
     align-items: center;
-     
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.block-2 .navigation .menu ul{
+.menu ul{
     text-align: center;
     display: flex;
-    font-size: 18px;
+    font-size: 17px;
     justify-content: center;
-    gap: 30px;
+    gap: 2em;
     text-transform: uppercase;
     color: #fff;
     transition: all 0.5s ease 0s;
+    font-weight: bold;
 }
-.block-2 .navigation .menu ul li a{
+.menu ul li a{
     color: #fff;
-    line-height: 0.85;
     text-decoration: none;
+    margin-left: 12px;
+    text-transform: uppercase;
+    height: 70px;
+    line-height: 70px;
 }
-.block-2 .navigation .menu ul li{
+.menu ul li a:hover,
+.menu ul li a.active{
+    color: #CCCCCC
+}
+.menu ul li{
     display: inline-block;
 }
-.block-2 .navigation .menu ul li a + a{
+.menu ul li a + a{
     margin-left: 15px;
 }
  .shop{
 text-align: right;
-margin-left: 50px;
+margin-left: 40px;
 }
 .shop > ul > li{
     margin-left: 10px;
 }
-.shop > ul > li > a{
-  
-}
 .shop > ul > li > a > i{
-    margin-right: 10px;
+    margin-right: 20px;
     color: #fff;
 }
 .menu-area{
     display: flex;
-    justify-content: space-between;
     justify-content: flex-end;
-    
+    align-items: center;
 }
