@@ -1,0 +1,138 @@
+.block{
+    padding: 0;
+}
+ .toolbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #0494e3;
+    
+}
+.contacts  > ul > li{
+    display: inline-block;
+    margin-right: 25px;
+    color: #fff;
+}
+.contacts{
+  
+}
+.contacts > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contacts  > ul > li > a{
+    transition: all 0.5s ease 0s;
+    color: #fff;
+    line-height: 0.85;
+    text-decoration: none;
+}
+.contacts  > ul > li > i{
+    margin-right: 10px;
+    color: #fff;
+}
+.icons > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+ .icons > ul > li{
+    display: inline-block;
+}
+.icons > ul > li.falow{
+    color: #fff;
+  font-size: 13px;
+}
+.icons > ul > li + li{
+    margin-left: 15px;
+}
+.icons > ul > li > a{
+    display: block;
+    text-decoration: none;
+}
+.icons > ul > li > a > i{
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+} 
+hr{
+    margin: 10px 0 0;
+    border-color: #0494e3;
+    opacity: 0.5
+}
+.block-2{
+    padding: 0;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+}
+header .block-2 .navigation{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+.block-2 .navigation{
+    display: flex;
+    align-items: center;
+     
+}
+.block-2 .navigation ul{
+    display: flex;
+    align-items: center;
+     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.block-2 .navigation .menu ul{
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    gap: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.block-2 .navigation .menu ul li a{
+    color: #fff;
+    line-height: 0.85;
+    text-decoration: none;
+}
+.block-2 .navigation .menu ul li{
+    display: inline-block;
+}
+.block-2 .navigation .menu ul li a + a{
+    margin-left: 15px;
+}
+ .shop{
+text-align: right;
+margin-left: 50px;
+}
+.shop > ul > li{
+    margin-left: 10px;
+}
+.shop > ul > li > a{
+  
+}
+.shop > ul > li > a > i{
+    margin-right: 10px;
+    color: #fff;
+}
+.menu-area{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    
+}
