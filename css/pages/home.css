@@ -422,11 +422,22 @@ header .block-2 .navigation {
 .counter {
     background-image: url("../../img/counter\ bckgrnd.png");
     background-size: cover;
-    width: 100%;
     height: 40%;
+    width: 100%;
 }
 .counter-txt {
     color: var(--white);
+}
+.counter-father {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap:2.5em;
+}
+.counter-text1 {
+    margin-left: 10%;
+}
+.counter-text2 {
+    margin-left: 10%;
 }
 .counter-h1 {
     font-size: 2em;
