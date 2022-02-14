@@ -6,7 +6,6 @@
     padding-right: 50px;
     margin: 0;
     margin-top: 10px;
-   
 }
 .header{
     background-color: #0494e3;
@@ -16,9 +15,6 @@
     display: inline-block;
     margin-right: 25px;
     color: #fff;
-}
-.contacts{
-  
 }
 .contacts > ul{
     display: flex;
@@ -34,6 +30,11 @@
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+}
+.contacts  > ul > li > a:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+    color: #fff;  
 }
 .contacts  > ul > li > i{
     margin-right: 10px;
@@ -60,6 +61,11 @@
 .icons > ul > li > a{
     display: block;
     text-decoration: none;
+}
+.icons > ul > li > a:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+    color: #fff;
 }
 .icons > ul > li > a > i{
     text-align: center;
@@ -90,6 +96,7 @@ hr{
     padding: 10px 0;
     padding-left: 50px;
     padding-right: 45px;
+    
 }
 .navigation ul{
     display: flex;
@@ -101,9 +108,9 @@ hr{
 .menu ul{
     text-align: center;
     display: flex;
-    font-size: 17px;
+    font-size: 17.5px;
     justify-content: center;
-    gap: 2em;
+    gap: 1.5em;
     text-transform: uppercase;
     color: #fff;
     transition: all 0.5s ease 0s;
@@ -137,6 +144,10 @@ margin-left: 40px;
 .shop > ul > li > a > i{
     margin-right: 20px;
     color: #fff;
+}
+.shop > ul > li > a > i:hover{
+    color: #666666;
+    transition: all 0.5s ease 0s;
 }
 .menu-area{
     display: flex;
