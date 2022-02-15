@@ -129,7 +129,7 @@
     width: 100px;
     padding: 1em;
 }
-*/ .column > .column-right {
+.column > .column-right {
     margin-top: 100px;
 }
 
@@ -224,9 +224,8 @@
 }
 .popup .show {
     visibility: visible;
-    
 }
-.vid{
+.vid {
     position: fixed;
     top: 10vh;
     left: 10vw;
@@ -234,7 +233,7 @@
     width: 80vw;
     z-index: 1;
 }
-.closeVid{
+.closeVid {
     position: fixed;
     right: 8vw;
     top: 8vh;
@@ -391,6 +390,21 @@
 /* logo block end */
 
 /* how we work block start */
+.big-title {
+    text-align: center;
+}
+.works-title > .big-title:before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    top: 35px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* how we work block end */
 
 /* recent block start */
