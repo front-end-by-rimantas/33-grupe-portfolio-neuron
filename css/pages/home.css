@@ -336,7 +336,6 @@
     border: 2px solid black;
     height: 400px;
     border-radius:1em;
-    z-index: 12;
 }
 .subscribe-h1 {
     width: 65%;
@@ -412,7 +411,6 @@
     background: url(../../img/logos/logo\ banner.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
 }
 .eiliu-karaliene {
     display: grid;
