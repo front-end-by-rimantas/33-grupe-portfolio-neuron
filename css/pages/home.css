@@ -7,154 +7,21 @@
 
 /* components */
 @import '../components/button.css';
+@import '../components/header.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header start */
-/*toolbar start*/
-header .block {
-    padding: 0;
-}
-header .block .toolbar {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px 0;
-}
-header {
-    background-color: #0494e3;
-}
-.contacts > ul > li {
-    display: inline-block;
-    margin-right: 25px;
-    color: #fff;
-}
-.contacts {
-}
-.contacts > ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.contacts > ul > li > a {
-    transition: all 0.5s ease 0s;
-    color: #fff;
-    line-height: 0.85;
-    text-decoration: none;
-}
-.contacts > ul > li > i {
-    margin-right: 10px;
-    color: #fff;
-}
-.icons > ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.icons > ul > li {
-    display: inline-block;
-}
-.icons > ul > li.falow {
-    color: #fff;
-    font-size: 13px;
-}
-.icons > ul > li + li {
-    margin-left: 15px;
-}
-.icons > ul > li > a {
-    display: block;
-    text-decoration: none;
-}
-.icons > ul > li > a > i {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    transition: all 0.5s ease 0s;
-}
-hr {
-    margin: 10px 0 0;
-    border-color: #0494e3;
-    opacity: 0.5;
-}
-header .block-2 {
-    padding: 0;
-}
-header .block-2 .navigation {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px 0;
-}
-.block-2 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.block-2 .navigation ul {
-    display: flex;
-    align-items: center;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.block-2 .navigation .menu ul {
-    text-align: center;
-    display: flex;
-    font-size: 18px;
-    justify-content: center;
-    gap: 30px;
-    text-transform: uppercase;
-    color: #fff;
-    transition: all 0.5s ease 0s;
-}
-.block-2 .navigation .menu ul li a {
-    color: #fff;
-    line-height: 0.85;
-    text-decoration: none;
-}
-.block-2 .navigation .menu ul li {
-    display: inline-block;
-}
-.block-2 .navigation .menu ul li a + a {
-    margin-left: 15px;
-}
-.block-2 > .navigation > .menu {
-    display: flex;
-    justify-content: end;
-    gap: 50px;
-}
-.block-2 > .navigation > .shop {
-}
-.shop > ul > li {
-    margin-left: 10px;
-}
-.shop > ul > li > a {
-    margin-left: 10px;
-}
-.shop > ul > li > a > i {
-    margin-right: 10px;
-    color: #fff;
-}
-.menu-area {
-    display: flex;
-    justify-content: space-between;
-}
-/*toolbar start*/
 /* header end */
 
 /* hero start */
 
-.hero-background {
+/* .hero-background {
     background-color: var(--blue);
     background-image: url('../../img/background-hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .hero-text-h1 {
     color: var(--white);
@@ -261,7 +128,7 @@ header .block-2 .navigation {
 .img-about1 {
     width: 100px;
     padding: 1em;
-}
+} */
 
 .column > .column-right {
     margin-top: 100px;
@@ -403,22 +270,54 @@ header .block-2 .navigation {
 }
 .popup .show {
     visibility: visible;
+    
 }
-.vid {
-    position: absolute;
+.vid{
+    position: fixed;
     top: 10vh;
     left: 10vw;
     height: 80vh;
     width: 80vw;
+    z-index: 1;
 }
-.closeVid {
-    position: absolute;
+.closeVid{
+    position: fixed;
     right: 8vw;
     top: 8vh;
+    z-index: 1;
 }
 /* about block 2 end */
 
 /* counter block start */
+.counter {
+    background-image: url("../../img/counter\ bckgrnd.png");
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+}
+.counter-txt {
+    color: var(--white);
+}
+.counter-father {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap:2.5em;
+}
+.counter-text1 {
+    margin-left: 10%;
+}
+.counter-text2 {
+    margin-left: 10%;
+}
+.counter-h1 {
+    font-size: 2em;
+}
+.counter-h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
 /* counter block end */
 
 /* services block start */
