@@ -1,0 +1,168 @@
+.block{
+    padding: 0;
+}
+.container-fluid >  .toolbar{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.header{
+    /* background-image: linear-gradient( -50deg ,#09c778,#01a0f9); */
+}
+.fonas{
+    background-image: url('../../img/background-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contacts  > ul > li{
+    display: inline-block;
+    margin-right: 25px;
+    color: #fff;
+}
+.contacts > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.contacts  > ul > li > a{
+    transition: all 0.5s ease 0s;
+    color: #fff;
+    line-height: 0.85;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+.contacts  > ul > li > a:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+    color: #fff;  
+}
+.contacts  > ul > li > i{
+    margin-right: 10px;
+    color: #fff;
+}
+.icons > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+ .icons > ul > li{
+    display: inline-block;
+}
+.icons > ul > li.falow{
+    color: #fff;
+  font-size: 16px;
+}
+.icons > ul > li + li{
+    margin-left: 15px;
+}
+.icons > ul > li > a{
+    display: block;
+    text-decoration: none;
+}
+.icons > ul > li > a:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+    color: #fff;
+}
+.icons > ul > li > a > i{
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+} 
+hr{
+    margin-bottom: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 97%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    border-color: #0494e3;
+    opacity: 0.2;
+}
+.block-2{
+    padding: 0;
+    position: relative;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+}
+.block-2 .navigation{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-image: linear-gradient( -41deg ,#09c778,#01a0f9);
+    position: fixed;
+    z-index: 1;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul{
+    text-align: center;
+    display: flex;
+    font-size: 17.5px;
+    justify-content: center;
+    gap: 1.5em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 12px;
+    text-transform: uppercase;
+    height: 70px;
+    line-height: 70px;
+}
+.menu ul li a:hover,
+.menu ul li a.active{
+    color: #CCCCCC
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a + a{
+    margin-left: 15px;
+}
+ .shop{
+text-align: right;
+margin-left: 40px;
+}
+.shop > ul > li{
+    margin-left: 10px;
+}
+.shop > ul > li > a > i{
+    margin-right: 20px;
+    color: #fff;
+}
+.shop > ul > li > a > i:hover{
+    color: #666666;
+    transition: all 0.5s ease 0s;
+}
+.menu-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
