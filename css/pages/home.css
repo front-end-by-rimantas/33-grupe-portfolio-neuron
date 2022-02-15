@@ -404,6 +404,24 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.works-icon-circle {
+    background-color: var(--white);
+    border: 1px dashed #01a0f9;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+.works-icon {
+    display: inline-block;
+    padding: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+}
+.works-icon > img {
+    width: 80px;
+}
 
 /* how we work block end */
 
