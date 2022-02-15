@@ -468,6 +468,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media (min-width: 767px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+}
+@media (min-width: 991px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+}
+@media (min-width: 575px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+}
 /* how we work block end */
 
 /* recent block start */
