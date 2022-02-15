@@ -357,11 +357,14 @@
     width: 6%;
     height: 9%;
     position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    bottom: 163px;
+    right: -10px;
 }
+
+*:focus {
+    outline: none;
+} 
+
 .fa-location-arrow {
     color: #fff;
     font-size: 2em;
@@ -371,9 +374,9 @@
     justify-content: space-around;
 }
 .subscribe-forma {
-    width: 100%;
+    width: 98%;
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 0.5px solid grey;
     line-height: 3em;
 }
 
@@ -392,6 +395,13 @@
     top: 35px;
     z-index: -1;
 }
+
+.subscribe-btn:hover { 
+    background: linear-gradient(41deg, #09c778, #01a0f9);
+    opacity: 80%;
+    transition: all 0.7s ease 0s;
+}
+
 
 /* subscribe block end */
 
