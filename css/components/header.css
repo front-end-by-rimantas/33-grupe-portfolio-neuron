@@ -1,4 +1,4 @@
-.block{
+.header{
     padding: 0;
 }
 .container-fluid >  .toolbar{
@@ -107,7 +107,8 @@ hr{
     padding-left: 40px;
     padding-right: 20px;
     background-image: linear-gradient( -41deg ,#09c778,#01a0f9);
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
 .navigation ul{
@@ -165,4 +166,15 @@ margin-left: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media (max-width: 770px) {
+    .header > .toolbar {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .header > .toolbar {
+        display: none;
+    }
 }
