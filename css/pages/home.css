@@ -427,6 +427,26 @@
     text-align: center;
     padding-top: 1em;
 }
+.little-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+    border: 1px dashed #01a0f9;
+    margin: 0 auto;
+}
+
+.little-round::after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* how we work block end */
 
 /* recent block start */
