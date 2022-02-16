@@ -489,6 +489,12 @@
 /* contact block start */
 
 /* contact block logos end */
+
+.bg-blu{
+    background: url(/img/background-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .container i::before{
     font-size: 100px;
 }
@@ -511,7 +517,7 @@ gap: 35px;
         height: 50px;
         background-clip: text;
         -webkit-background-clip: text;
-        color: rgba(0, 0, 0, 0);
+        /* color: rgba(0, 0, 0, 0); */
         background-image: linear-gradient(
     0deg
     , #09c778, #01a0f9);
@@ -519,13 +525,72 @@ gap: 35px;
  }
 .contacts .contact .title{
         grid-area: title;
+        display: block;
  }
 .contacts .contact .description{
-        grid-area: desc; 
+        grid-area: desc;
+        display: block; 
  }
 
  .contact i::before{
      font-size: 30px;
  }
+ .form label{
+    display: none;
+}
+ .form {
+     display: grid;
+     gap: 30px;
+ }
+ form .form-row input {
+    height: 43px;
+    line-height: 43px;
+    width: 90%;
+    margin-left: 14px;
+
+}
+form .btn{
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+}
+ .form .form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: 
+    'first second'
+    'third fourth'
+    'fifth fifth';
+ }
+ .form .form-row .first{
+     grid-area: first;
+ }
+ .form .form-row .second{
+    grid-area: second;
+}
+.form .form-row .third{
+    grid-area: third;
+}
+.form .form-row .fourth{
+    grid-area: fourth;
+}
+.form .form-row .fifth{
+    grid-area: fifth;
+}
+
+textarea{
+    width: 100%;
+    height: 100%
+  }
 /* footer start */
 /* footer end */ 
