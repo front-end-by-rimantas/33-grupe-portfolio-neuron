@@ -487,7 +487,45 @@
 /* recent block logos end */
 
 /* contact block start */
-/* contact block logos end */
 
+/* contact block logos end */
+.container i::before{
+    font-size: 100px;
+}
+
+.container  .row  .contacts{
+display: grid;
+gap: 35px;
+}
+.container  .row  .contacts .contact{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 4px 10px;
+    grid-template-areas: 
+    'ico title'
+    'ico desc';
+ }
+.contacts .contact .ico{
+        grid-area: ico;
+        align-self: start;
+        height: 50px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(
+    0deg
+    , #09c778, #01a0f9);
+        margin: 6px 0 0;
+ }
+.contacts .contact .title{
+        grid-area: title;
+ }
+.contacts .contact .description{
+        grid-area: desc; 
+ }
+
+ .contact i::before{
+     font-size: 30px;
+ }
 /* footer start */
-/* footer end */ ;
+/* footer end */ 
