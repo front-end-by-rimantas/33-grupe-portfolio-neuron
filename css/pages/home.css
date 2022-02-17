@@ -370,10 +370,11 @@
     margin-left: 20px;
     color: #eef1f8;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .container-projects .row-projects .column-projects {
         grid-template-columns: 1fr;
         margin: 0;
+        gap: 0;
     }
     .img1 {
         display: none;
@@ -649,6 +650,9 @@
 @media (min-width: 991px) {
     .single-work {
         padding-bottom: 40px;
+    }
+    .work-title {
+        font-size: 15px;
     }
 }
 @media (min-width: 575px) {
