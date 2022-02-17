@@ -25,19 +25,26 @@
 
 .hero-text-h1 {
     color: var(--white);
-    font-size: 3em;
+    font-size: 50px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .hero-text-h2 {
     color: var(--white);
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: 500;
 }
 .hero-txt-box {
-    margin-top: 21%;
+    margin-top: 15%;
+    margin-left:px;
+}
+.eile {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
-.btn {
+.hero-btn {
     width: 13vw;
     border-radius: 5vw;
     border: 2px solid white;
@@ -86,7 +93,7 @@
         display: inline-block;
     }
     .hero-text-h1 {
-        font-size: 1.8em;
+        font-size: em;
     }
     .hero-text-h2 {
         font-size: 1.5em;
