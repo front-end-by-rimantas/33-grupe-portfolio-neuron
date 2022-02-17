@@ -216,7 +216,7 @@ ties 540 tekstas soka i kita eilute, align left
     width: 100px;
     padding: 1em;
 }
-*/ .column > .column-right {
+.column > .column-right {
     margin-top: 100px;
 }
 
@@ -311,9 +311,8 @@ ties 540 tekstas soka i kita eilute, align left
 }
 .popup .show {
     visibility: visible;
-    
 }
-.vid{
+.vid {
     position: fixed;
     top: 10vh;
     left: 10vw;
@@ -321,7 +320,7 @@ ties 540 tekstas soka i kita eilute, align left
     width: 80vw;
     z-index: 1;
 }
-.closeVid{
+.closeVid {
     position: fixed;
     right: 8vw;
     top: 8vh;
@@ -449,13 +448,45 @@ ties 540 tekstas soka i kita eilute, align left
 .img3 {
     grid-area: img3;
 }
+
 .column-projects .single-project .title-single-project > a {
     text-decoration: none;
     position: absolute;
-    z-index: 11;
+    z-index: 1;
     color: black;
     margin-left: 20px;
-    color: var(--white);
+    color: #eef1f8;
+}
+@media (max-width: 767px) {
+    .container-projects .row-projects .column-projects {
+        grid-template-columns: 1fr;
+        margin: 0;
+        gap: 0;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+    .img3 {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 991px) {
+    .container-projects .row-projects .column-projects {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .img3 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .column-projects .single-project {
@@ -467,6 +498,7 @@ ties 540 tekstas soka i kita eilute, align left
 
 .column-projects .single-project:hover {
     background: linear-gradient(-41deg, var(--teal), var(--blue));
+    color: transparent;
 }
 
 /* our latest proget end */
@@ -477,7 +509,7 @@ ties 540 tekstas soka i kita eilute, align left
     width: 75%;
     border: 2px solid black;
     height: 400px;
-    border-radius:1em;
+    border-radius: 1em;
 }
 .subscribe-h1 {
     width: 65%;
@@ -492,7 +524,7 @@ ties 540 tekstas soka i kita eilute, align left
 .subscribe-text {
     position: relative;
 }
-.subscribe-btn { 
+.subscribe-btn {
     background: linear-gradient(41deg, #09c778, #01a0f9);
     border: none;
     border-radius: 50%;
@@ -505,7 +537,7 @@ ties 540 tekstas soka i kita eilute, align left
 
 *:focus {
     outline: none;
-} 
+}
 
 .fa-location-arrow {
     color: #fff;
@@ -538,12 +570,11 @@ ties 540 tekstas soka i kita eilute, align left
     z-index: -1;
 }
 
-.subscribe-btn:hover { 
+.subscribe-btn:hover {
     background: linear-gradient(41deg, #09c778, #01a0f9);
     opacity: 80%;
     transition: all 0.7s ease 0s;
 }
-
 
 /* subscribe block end */
 
@@ -559,14 +590,172 @@ ties 540 tekstas soka i kita eilute, align left
     gap: 20px;
 }
 .eiliu-karaliene > .logo-row {
-    display: grid; 
+    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     padding: 30px;
 }
- 
+
 /* logo block end */
 
 /* how we work block start */
+.big-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+.single-work {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.works-title > .big-title:before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    top: 35px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.works-icon {
+    display: flex;
+    padding: 60px;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 50%;
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+}
+
+.works-icon-circle {
+    position: relative;
+    text-align: center;
+}
+.circle-pulse {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+.circle-pulse:hover {
+    position: relative;
+    animation-name: pulse;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes pulse {
+    0% {
+        background-color: var(--light);
+    }
+    25% {
+        background-color: var(--teal);
+    }
+    50% {
+        background-color: var(--light);
+    }
+    75% {
+        background-color: var(--cyan);
+    }
+    100% {
+        background-color: var(--light);
+    }
+}
+.works-icon::after {
+    content: '';
+    background-color: var(--white);
+    border: 1px dashed var(--primary);
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    background: transparent;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.works-icon > img {
+    width: 80px;
+}
+.work-title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.little-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+    border: 1px dashed var(--primary);
+    margin: 0 auto;
+}
+
+.little-round::after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-arrow {
+    width: 2em;
+    color: var(--teal);
+    margin-left: 40%;
+    margin-top: -10%;
+    transform: translate(50%, 50%);
+    transform: rotate(45deg);
+}
+
+.icon-arrow::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    border: 1px dashed #01a0f9;
+    margin-left: -20px;
+    margin-top: -65px;
+    transform: rotate(-45deg);
+}
+
+@media (min-width: 767px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+}
+@media (min-width: 991px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+    .work-title {
+        font-size: 15px;
+    }
+}
+@media (min-width: 575px) {
+    .single-work {
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 991px) {
+    .little-round {
+        display: none;
+    }
+    .icon-arrow {
+        display: none;
+    }
+}
+
 /* how we work block end */
 
 /* recent block start */
