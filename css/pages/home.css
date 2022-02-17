@@ -17,7 +17,8 @@
 /* hero start */
 
 .hero-txt-box {
-    margin-top: 15%;
+    margin-top: 20%;
+
 }
 .hero-txt-box > .hero-text-h1 {
     color: var(--white);
@@ -30,19 +31,22 @@
     font-size: 30px;
     font-weight: 400;
 }
+.mygtukai {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
-.hero-txt-box > .hero-btn {
-    width: 14vw;
+.mygtukai > .hero-btn {
+    width: 40%;
     border-radius: 5vw;
     border: 2px solid white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1em;
-    padding: 0.9em 1.2em;
-    display: inline-block;
+    font-size: 18px;
+    padding: 10px 15px;
     text-align: center;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: 5%;
 }
 .button1 {
     background-color: var(--white);
@@ -61,70 +65,116 @@
     color: #01a0f9;
 }
 
+.plotis {
+    width: 100%;
+    height: auto;
+}
 .hero-img > .robotukas {
-    margin-top: 35%;
+    margin-top:50%;
     animation-name: leidziasi;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 .hero-img > .zmogiukai {
-    margin-top: 80%;
+    margin-top: 35%;
 }
- 
+
 @keyframes leidziasi {
         0%  {
-            margin-top: 35%;
+            margin-top: 0%;
         }
 
         50% {
-            margin-top: 50%;
+            margin-top: 10%;
         }
 
         100% {
-            margin-top: 35%;
+            margin-top: 0%;
         }
+}  
+@media (min-width: 300px) {
+
+    .eile > .hero-txt-box {
+        margin-top: 20%;
+        width: 80%;
+        margin-left: 15%;
+        }
+    .hero-txt-box > .hero-text-h1 {
+        font-size: 30px;
+        width: 100%;
     }
-@media (min-width: 767px) {
-    .hero-img {
+    .hero-txt-box > .hero-text-h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .mygtukai > .hero-btn {
+        width: 40%;
+        font-size: 10px;
         margin-top: 10%;
+    }
+}
+@media (min-width: 575px) {
+
+    .eile > .hero-txt-box {
+           margin-top: 20%;
+           width: 80%;
+           margin-left: 8%;
+       }
+       .hero-txt-box > .hero-text-h1 {
+           font-size: 35px;
+           width: 90%;
+       }
+       .hero-txt-box > .hero-text-h2 {
+           font-size: 20px;
+           font-weight: 400;
+       }
+       .mygtukai > .hero-btn {
+           width: 40%;
+           font-size: 13px;
+       }
+       .hero-img {
+        margin-top: 0%;
+    }
+}
+
+@media (min-width: 767px) {
+    .eile > .hero-txt-box {
+        margin-top: 20%;
+        width: 50%;
+        margin-left: 8%;
+    }
+    .hero-img {
+        margin-top: 30%;
     }
     .hero-txt-box > .hero-text-h1 {
         font-size: 35px;
     }
     .hero-txt-box > .hero-text-h2 {
         font-size: 20px;
-        font-weight: 400;
     }
-}
 
-
-@media (max-width: 300px) {
-    .hero-btn {
-        padding: 12px 36px;
-        display: inline-block;
-        border-radius: 30px !important;
-        font-size: 16px;
-        font-weight: 500;
-        text-align: center;
-        text-transform: uppercase;
-        border-radius: 30px;
-        transition: all 0.3s ease 0s;
-        border: 1px solid #ffffff;
+}  
+@media (min-width: 991px) {
+    .eile > .hero-txt-box {
+        margin-top: 15%;
+        width: 45%;
+        margin-left: 0;
+    }
+    .hero-img {
+        margin-top: 10%;
     }
     .hero-txt-box > .hero-text-h1 {
+        font-size: 45px;
+    }
+    .hero-txt-box > .hero-text-h2 {
         font-size: 25px;
-        width:100%;
     }
-    .hero-text-h2 {
-        font-size: 10px;
-        font-weight: 400;
-        width: 100%;
-    }
-} 
-@media (min-width: 500px) {
 
-}
+}  
+
+
+
 
 /*ties 990px pasidaro maziukai
 ties 767 isnyksta
