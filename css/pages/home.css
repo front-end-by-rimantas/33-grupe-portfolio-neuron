@@ -624,5 +624,16 @@ textarea{
     background: #63bdf1;
     opacity: 0.8;
   }
+  @media (max-width: 767px) {
+    .form .form-row{
+        grid-template-areas:
+        'first'
+        'second'
+        'third'
+        'fourth'
+        'fifth';
+      grid-template-columns: 1fr;
+    }
+}
 /* footer start */
 /* footer end */ 
