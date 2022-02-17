@@ -361,13 +361,29 @@
 .img3 {
     grid-area: img3;
 }
+
 .column-projects .single-project .title-single-project > a {
     text-decoration: none;
     position: absolute;
-    z-index: 11;
+    z-index: 1;
     color: black;
     margin-left: 20px;
-    color: var(--white);
+    color: #eef1f8;
+}
+@media (max-width: 767px) {
+    .container-projects .row-projects .column-projects {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+    .img3 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .column-projects .single-project {
@@ -379,6 +395,7 @@
 
 .column-projects .single-project:hover {
     background: linear-gradient(-41deg, var(--teal), var(--blue));
+    color: transparent;
 }
 
 /* our latest proget end */
