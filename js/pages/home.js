@@ -18,29 +18,31 @@ function video(id, src) {
     let a = document.getElementById('videoAbout2');
     if (a === null) {
         let iframe = document.createElement('iframe');
-        // iframe.classList.add("vid");
-        iframe.classList.add('vid');
+        iframe.classList.add('about2-vid');
         iframe.id = 'videoAbout2';
-        iframe.src = src;
-        //  + '?rel=0';
+        iframe.src = src + '?rel=0';
         iframe.title = null;
         let element = document.getElementById(id);
         element.appendChild(iframe);
+        let closeX = document.createElement('p');
+        closeX.textContent = 'x';
+        closeX.id = 'x';
+        closeX.classList.add('about2-closeVid');
+        closeX.setAttribute('onclick','videoClose("videoAbout2");');
+        element.appendChild(closeX);
+        element.appendChild(iframe);
+        let vidBackGroundColor = document.createElement('div');
+        vidBackGroundColor.id = 'vidBackGroundColor';
+        vidBackGroundColor.classList.add('about2-video-background');
+        element.appendChild(vidBackGroundColor);
+        console.log(`%c errors that appear when opening iframe will be fixed later`, 'color: green; font-weight: bold; font-size: 1rem');
     }
-    // let iframe = document.createElement('iframe');
-    // iframe.classList.add("vid");
-    // iframe.classList.add("video1");
-    // iframe.id='videoAbout2';
-    // iframe.src=src;
-    // let element = document.getElementById(id);
-    // element.appendChild(iframe);
 }
 
 function videoClose(id) {
-    let popup = document.getElementById(id);
-    let elmnt = document.getElementById(id);
-    elmnt.remove();
-    popup.classList.toggle('hide');
+    document.getElementById('x').remove();
+    document.getElementById('vidBackGroundColor').remove();
+    document.getElementById(id).remove();
 }
 
 // function remove(){
