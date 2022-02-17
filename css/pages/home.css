@@ -495,42 +495,71 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container i::before{
+.container .info-box
+{
+    background: #ffffff;
+    padding: 44px 50px 30px;
+    border-radius: 5px;
+    margin-top: -75px
+}
+.info-box a{
+    display: block;
+    text-decoration: none;
+}
+.info-box .main-title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container .main-ico i::before{
     font-size: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(0deg, #09c778, #01a0f9);
 }
 
 .container  .row  .contacts{
-display: grid;
-gap: 35px;
+    display: grid;
+    gap: 12px;
 }
 .container  .row  .contacts .contact{
     display: grid;
     grid-template-columns: 50px 1fr;
-    gap: 4px 10px;
+    gap: 3px 10px;
     grid-template-areas: 
     'ico title'
     'ico desc';
  }
-.contacts .contact .ico{
+ .contact .absoliut{
+     position: relative;
+ }
+
+.contact .ico{
         grid-area: ico;
         align-self: start;
         height: 50px;
         background-clip: text;
         -webkit-background-clip: text;
-        /* color: rgba(0, 0, 0, 0); */
-        background-image: linear-gradient(
-    0deg
-    , #09c778, #01a0f9);
+        color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(0deg, #09c778, #01a0f9);
         margin: 6px 0 0;
+        position: absolute;
  }
 .contacts .contact .title{
         grid-area: title;
         display: block;
+        font-size: 18px;
+        font-weight: 600; 
  }
 .contacts .contact .description{
         grid-area: desc;
-        display: block; 
- }
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    line-height: 26px;
+    font-size: 16px;
+}
 
  .contact i::before{
      font-size: 30px;
@@ -547,7 +576,8 @@ gap: 35px;
     line-height: 43px;
     width: 90%;
     margin-left: 14px;
-
+    background: #63bdf1;
+    opacity: 0.8;
 }
 form .btn{
     width: 100%;
@@ -590,7 +620,9 @@ form .btn{
 
 textarea{
     width: 100%;
-    height: 100%
+    height: 100%;
+    background: #63bdf1;
+    opacity: 0.8;
   }
 /* footer start */
 /* footer end */ 
