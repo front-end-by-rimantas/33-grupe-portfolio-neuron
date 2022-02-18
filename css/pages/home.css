@@ -687,7 +687,7 @@
 .social-media > ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .f-icon {
@@ -735,6 +735,9 @@
     bottom: 6px;
     left: 1px;
     z-index: -1;
+}
+.row-little {
+    margin-left: -10px;
 }
 .two-columns {
     display: inline-block;
