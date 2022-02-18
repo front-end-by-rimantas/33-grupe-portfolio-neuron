@@ -719,7 +719,7 @@
     color: var(--gray-dark);
 }
 .little-title {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     position: relative;
     text-transform: uppercase;
     font-weight: 600;
@@ -739,11 +739,7 @@
 .two-columns {
     display: inline-block;
 }
-.left-little {
-    display: inline-block;
-}
-.right-little {
-}
+
 .footer-nav {
     display: inline-block;
 }
@@ -753,5 +749,20 @@
 .footer-nav > ul > li > a {
     text-decoration: none;
     color: var(--gray-dark);
+}
+@media (max-width: 575px) {
+    .footer-column {
+        padding-bottom: 33px;
+    }
+}
+@media (max-width: 767px) {
+    .footer-column {
+        padding-bottom: 33px;
+    }
+}
+@media (max-width: 991px) {
+    .footer-column {
+        padding-bottom: 33px;
+    }
 }
 /* footer end */
