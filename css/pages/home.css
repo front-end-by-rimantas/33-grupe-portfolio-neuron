@@ -678,4 +678,62 @@
 /* contact block logos end */
 
 /* footer start */
-/* footer end */ ;
+.container-footer {
+    background-image: url(../../img/footer-block/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5em;
+}
+.social-media > ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.f-icon {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: all 0.7s ease 0s;
+    z-index: 1;
+    color: var(--white);
+    background: linear-gradient(-41deg, var(--teal), var(--blue));
+}
+.f-icon:hover {
+    background: linear-gradient(41deg, #09c778, #01a0f9);
+}
+.social-media ul > li > a {
+    text-decoration: none;
+}
+.footer-logo {
+    margin-bottom: 33px;
+    margin-top: 5px;
+}
+.footer-about {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+.little-title {
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 1;
+}
+.little-title:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    bottom: 6px;
+    left: 1px;
+    z-index: -1;
+}
+
+/* footer end */
