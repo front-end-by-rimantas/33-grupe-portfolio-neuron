@@ -716,6 +716,7 @@
 .footer-about {
     margin-bottom: 10px;
     line-height: 1.5em;
+    color: var(--gray-dark);
 }
 .little-title {
     margin-bottom: 40px;
@@ -735,5 +736,22 @@
     left: 1px;
     z-index: -1;
 }
-
+.two-columns {
+    display: inline-block;
+}
+.left-little {
+    display: inline-block;
+}
+.right-little {
+}
+.footer-nav {
+    display: inline-block;
+}
+.footer-nav ul {
+    list-style: none;
+}
+.footer-nav > ul > li > a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
 /* footer end */
