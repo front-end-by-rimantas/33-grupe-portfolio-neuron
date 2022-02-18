@@ -75,7 +75,6 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    padding: 10px 20px;
 }
 .hero-img > .zmogiukai {
     margin-top: 35%;
@@ -84,14 +83,17 @@
 @keyframes leidziasi {
         0%  {
             margin-top: 0%;
+            margin-bottom: 10%;
         }
 
         50% {
             margin-top: 10%;
+            margin-bottom: 0%;
         }
 
         100% {
             margin-top: 0%;
+            margin-bottom: 10%;
         }
 }  
 @media (min-width: 300px) {
