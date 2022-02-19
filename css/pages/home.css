@@ -799,6 +799,7 @@ ties 540 tekstas soka i kita eilute, align left
     margin-bottom: 10px;
     line-height: 1.5em;
     color: var(--gray-dark);
+    font-size: 18px;
 }
 .little-title {
     margin-bottom: 33px;
@@ -827,6 +828,7 @@ ties 540 tekstas soka i kita eilute, align left
 
 .footer-nav {
     display: inline-block;
+    font-size: 18px;
 }
 .footer-nav ul {
     list-style: none;
@@ -843,14 +845,29 @@ ties 540 tekstas soka i kita eilute, align left
         padding-bottom: 33px;
     }
 }
+@media (min-width: 575px) {
+    .footer-about {
+        width: 50%;
+    }
+}
 @media (max-width: 767px) {
     .footer-column {
         padding-bottom: 33px;
     }
 }
+@media (min-width: 767px) {
+    .footer-about {
+        width: 50%;
+    }
+}
 @media (max-width: 991px) {
     .footer-column {
         padding-bottom: 33px;
+    }
+}
+@media (min-width: 991px) {
+    .footer-about {
+        width: 100%;
     }
 }
 /* footer end */
