@@ -333,9 +333,9 @@ ties 540 tekstas soka i kita eilute, align left
 
 /* counter block start */
 .counter {
-    background-image: url('../../img/counter\ bckgrnd.png');
+    background: linear-gradient(180deg, var(--teal) 30%, var(--blue));
     background-size: cover;
-    height: 40%;
+    height: 300px;
     width: 100%;
 }
 .counter-txt {
