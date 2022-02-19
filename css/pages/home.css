@@ -765,6 +765,7 @@ ties 540 tekstas soka i kita eilute, align left
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.5em;
+    padding-bottom: 0;
 }
 .social-media > ul {
     list-style: none;
@@ -838,7 +839,31 @@ ties 540 tekstas soka i kita eilute, align left
     color: var(--gray-dark);
 }
 .footer-nav > ul > li > a:hover {
+    transition: all 0.5s ease 0s;
     color: var(--primary);
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #e3e5ea;
+    padding: 24px 0;
+    margin-bottom: 0px;
+}
+.bottom-container {
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.footer-bottom > p {
+    color: var(--gray-dark);
+}
+.footer-bottom > p > a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+.footer-bottom > p > a:hover {
+    color: var(--primary);
+    transition: all 0.5s ease 0s;
 }
 @media (max-width: 575px) {
     .footer-column {
