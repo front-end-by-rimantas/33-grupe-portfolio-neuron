@@ -310,7 +310,7 @@ ties 540 tekstas soka i kita eilute, align left
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
-    background: linear-gradient(41deg, #09c778, #01a0f9);
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
     border-radius: 50em;
     height: 40px;
     width: 150px;
