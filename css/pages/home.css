@@ -334,32 +334,49 @@ ties 540 tekstas soka i kita eilute, align left
 /* counter block start */
 .counter {
     background: linear-gradient(180deg, var(--teal) 30%, var(--blue));
-    background-size: cover;
-    height: 300px;
+    height: auto;
     width: 100%;
 }
-.counter-txt {
+.counter-father {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.counter-h1, .counter-h3 {
     color: var(--white);
 }
-.counter-father {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 2.5em;
-}
-.counter-text1 {
-    margin-left: 10%;
-}
-.counter-text2 {
-    margin-left: 10%;
-}
 .counter-h1 {
-    font-size: 2em;
+    font-size: 45px;
+    font-weight: 600;
 }
-.counter-h2 {
-    font-size: 1.3em;
-    font-weight: 500;
+.counter-h3 {
+    font-size: 18px;
+    width: 100%;
+    margin-left: -20px;
+    font-weight: 600;
+}
+.counter-text2 > .reik-pastumt {
+    margin-left: 70px;
 }
 
+.counter-txt-box {
+    margin-top: -130px;
+    width: 100%;
+    margin-left: 50px;
+}
+.counter-all-box {
+    margin-top: -40px;
+}
+/* @media (min-width: 300px) {
+
+@media (min-width: 575px) {
+}
+
+@media (min-width: 767px) {
+   
+}  
+@media (min-width: 991px) {
+} */
 /* counter block end */
 
 /* services block start */
