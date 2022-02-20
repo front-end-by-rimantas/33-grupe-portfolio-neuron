@@ -337,46 +337,79 @@ ties 540 tekstas soka i kita eilute, align left
     height: auto;
     width: 100%;
 }
-.counter-father {
+.counter-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
 .counter-h1, .counter-h3 {
     color: var(--white);
 }
+ 
 .counter-h1 {
     font-size: 45px;
     font-weight: 600;
-}
-.counter-h3 {
+} 
+
+/.counter-h3 {
     font-size: 18px;
     width: 100%;
-    margin-left: -20px;
     font-weight: 600;
-}
-.counter-text2 > .reik-pastumt {
-    margin-left: 70px;
-}
+} 
 
-.counter-txt-box {
-    margin-top: -130px;
+ .counter-txt-box {
+    margin-top: -145px;
     width: 100%;
-    margin-left: 50px;
-}
-.counter-all-box {
-    margin-top: -40px;
-}
-/* @media (min-width: 300px) {
+    margin-left: 55px;
+} 
 
+ .counter-row > .counter-all-box {
+    width: 13%;
+}  
+    
+
+/* @media (min-width: 300px) {
+    .counter-row > .counter-all-box {
+       margin-left: 20%;
+    }
+    .counter-row {
+        flex-direction: column;
+        align-content: space-between;
+        gap: 20px;
+    }
+}
 @media (min-width: 575px) {
+    .counter-row > .counter-all-box {
+        margin-left: 30%;
+     }
+     .counter-row {
+        flex-direction: column;
+        align-content: space-between;
+        gap: 20px;
+    }
 }
 
 @media (min-width: 767px) {
-   
-}  
-@media (min-width: 991px) {
-} */
+    .counter-row > .counter-all-box {
+        height:200px;
+        width: 150px;
+        margin-left: 100px;
+    }
+    .counter-row {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}    */
+/* @media (min-width: 991px) {
+    .counter-father {
+        flex-wrap: nowrap;
+    }
+}  */
 /* counter block end */
 
 /* services block start */
@@ -785,4 +818,4 @@ ties 540 tekstas soka i kita eilute, align left
 /* contact block logos end */
 
 /* footer start */
-/* footer end */ ;
+/* footer end */ 
