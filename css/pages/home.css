@@ -273,17 +273,19 @@ ties 540 tekstas soka i kita eilute, align left
 
 /* about block 2 start */
 .about2-p{
-    color:666;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
     text-align: left;
     font-size: 15px;
     line-height: 26px;
-    padding-bottom: 35px;
+    padding-bottom: 26px;
 }
 .about-2-title{
+    font-family: 'Poppins', sans-serif;
     position: relative;
     color:#333;
     text-align: left;
-    font-size: 42px;
+    font-size: 35px;
     padding-bottom: 35px;
     padding-top: 65px;
     text-decoration-color: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);  
@@ -291,16 +293,17 @@ ties 540 tekstas soka i kita eilute, align left
 .about-2-title::after {
     content: '';
     position: absolute;
-    width: 150px;
-    height: 15px;
+    width: 120px;
+    height: 10px;
     background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
     z-index: -1;
-    left: 65px;
-    top: 95px;
+    left: 60px;
+    top: 92px;
     transform: translateX(-50%);
 }
 .about2-img {
-    width: 90vw;
+    width: 100vw;
+    margin: 0;
 }
 .about2-buttons {
     display: inline-flex;
@@ -320,15 +323,13 @@ ties 540 tekstas soka i kita eilute, align left
 .about2_a_lm:hover{
     background: linear-gradient(41deg, #01a0f9, #09c778);;
     transition: opacity 0,7s;
-    animation: about2-lm 0.1s;
+    animation: about2-lm 0.7s;
 }
 @keyframes about2-lm {
     0% {
         background: linear-gradient(41deg, #09c778, #01a0f9);
       }
-    70% {
-        background: #09c778;
-      }
+
     100% {
         background: linear-gradient(41deg, #09c778, #01a0f9);
       }
@@ -408,6 +409,47 @@ ties 540 tekstas soka i kita eilute, align left
         box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
       }
 }
+@media (max-width: 484px){
+    .about-2-title{
+        font-size: 20px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .about-2-title::after {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 10px;
+        left: 60px;
+        top: 50px;
+    }
+    .about2-p{
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 1199px){
+    .about-2-title{
+        font-size: 30px;
+        padding-top: 35px;
+        padding-bottom: 26px;
+    }
+    .about-2-title::after {
+        content: '';
+        position: absolute;
+        width: 132px;
+        height: 10px;
+        left: 69px;
+        top: 55px;
+    }
+    .about2-p{
+        line-height: 26px;
+        padding-bottom: 26px;
+    }
+}
+
+
 /* about block 2 end */
 
 /* counter block start */

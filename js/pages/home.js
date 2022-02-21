@@ -35,7 +35,7 @@ function video(id, src) {
         vidBackGroundColor.id = 'vidBackGroundColor';
         vidBackGroundColor.classList.add('about2-video-background');
         element.appendChild(vidBackGroundColor);
-        console.log(`%c errors that appear when opening iframe will be fixed later`, 'color: green; font-weight: bold; font-size: 1rem');
+        // console.log(`%c errors that appear when opening iframe will be fixed later`, 'color: green; font-weight: bold; font-size: 1rem');
     }
 }
 
