@@ -337,78 +337,46 @@ ties 540 tekstas soka i kita eilute, align left
     height: auto;
     width: 100%;
 }
-.counter-row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-} 
-
 .counter-h1, .counter-h3 {
     color: var(--white);
-}
- 
+} 
 .counter-h1 {
     font-size: 45px;
     font-weight: 600;
-    width: 100%;
+    width: 150px;
 } 
-
 .counter-h3 {
     font-size: 18px;
-    width: 100%;
+    width: 150px;
     font-weight: 600;
 } 
-
- .counter-txt-box {
-   display: flex;
-   flex-direction: column;
-   justify-content:first baseline;
-   width: 200px;
+.counter-all-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 } 
-
-    
-
-/* @media (min-width: 300px) {
-    .counter-row > .counter-all-box {
-       margin-left: 20%;
-    }
-    .counter-row {
-        flex-direction: column;
-        align-content: space-between;
-        gap: 20px;
-    }
-}
-@media (min-width: 575px) {
-    .counter-row > .counter-all-box {
-        margin-left: 30%;
-     }
-     .counter-row {
-        flex-direction: column;
-        align-content: space-between;
-        gap: 20px;
-    }
+.counter-txt-box {
+    background-image: url('../../img/counter/debeselis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 220px;
+    padding: 50px;
 }
 
-@media (min-width: 767px) {
-    .counter-row > .counter-all-box {
-        height:200px;
-        width: 150px;
-        margin-left: 100px;
+/* @media (max-width: 400px) and (min-width: 320px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 15%;
     }
-    .counter-row {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
-    }
-}    */
-/* @media (min-width: 991px) {
-    .counter-father {
-        flex-wrap: nowrap;
+} 
+@media (min-width: 401px) and (max-width: 575px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 25%;
     }
 }  */
+
 /* counter block end */
 
 /* services block start */
