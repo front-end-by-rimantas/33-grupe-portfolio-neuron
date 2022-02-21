@@ -3,6 +3,20 @@
 // CODE EXECUTION BELOW THIS COMMENT LINE
 
 /* header start */
+window.onscroll = function () {
+    toggleHeader();
+};
+
+var header = document.getElementById('header');
+var headerOffset = header.offsetTop;
+
+function toggleHeader() {
+    if (window.pageYOffset > headerOffset) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+}
 /* header end */
 
 /* hero start */
