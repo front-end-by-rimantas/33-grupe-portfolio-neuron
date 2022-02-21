@@ -767,24 +767,35 @@ ties 540 tekstas soka i kita eilute, align left
     background-repeat: no-repeat;
 }
 .container .info-box
-{
-    background: #ffffff;
+{   background: #ffffff;
     padding: 44px 50px 35px;
     border-radius: 5px;
     margin-top: -175px;
-    z-index: 5;
 }
 .info-box a{
     display: block;
     text-decoration: none;
 }
 .info-box .main-title{
+    position: relative;
+    z-index: 1;
     font-size: 35px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     color: #333333;
+}
+.info-box .main-title::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    top: 26px;
+    z-index: -1;
+    left: 18%;
+    transform: translateX(-50%);
 }
 .container .main-ico i{
     font-size: 100px;
@@ -865,6 +876,7 @@ ties 540 tekstas soka i kita eilute, align left
 .form .form-row ::-webkit-input-placeholder{
     color: #ffffff;
     opacity: 1;
+    font-size: 16px;
  }
  
  .form-row textarea textarea:-moz-placeholder{
@@ -881,7 +893,7 @@ ties 540 tekstas soka i kita eilute, align left
     box-shadow: none;
     resize: none;
     background-color: #ffffff4D;
-    font-size: 10px;
+    font-size: 16px;
 }
 form .btn{
     width: 100%;
@@ -926,7 +938,6 @@ form .btn{
 .form .form-row .fifth{
     grid-area: fifth;
 }
-
 textarea{
     background: rgba(255, 255, 255, 0.3);
     color: #ffffff;
@@ -955,6 +966,10 @@ textarea{
     .info-box .main-title{
         font-size: 30px;
     }
+    .info-box .main-title::before{
+        left: 26%;
+        width: 140px;
+    }
 }
 @media (max-width: 991px){
     .form{
@@ -972,6 +987,15 @@ textarea{
 .container .info-box{
     margin-top: -15px;
 }
+.info-box .main-title::before{
+    left: 12%;
+}
+@media (max-width: 767px){
+    .info-box .main-title::before{
+        left: 17%;
+        top: 22px;
+    }
+}
 }
 @media (max-width: 484px){
     .container .row .contacts .contact {
@@ -984,7 +1008,10 @@ textarea{
     .info-box .main-title{
         font-size: 20px;
     }
-    
+    .info-box .main-title::before{
+        left: 19%;
+        top: 15px;
+    }
 }
 /* footer start */
 .container-footer {
