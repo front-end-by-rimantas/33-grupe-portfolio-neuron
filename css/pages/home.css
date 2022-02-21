@@ -351,23 +351,22 @@ ties 540 tekstas soka i kita eilute, align left
 .counter-h1 {
     font-size: 45px;
     font-weight: 600;
+    width: 100%;
 } 
 
-/.counter-h3 {
+.counter-h3 {
     font-size: 18px;
     width: 100%;
     font-weight: 600;
 } 
 
  .counter-txt-box {
-    margin-top: -145px;
-    width: 100%;
-    margin-left: 55px;
+   display: flex;
+   flex-direction: column;
+   justify-content:first baseline;
+   width: 200px;
 } 
 
- .counter-row > .counter-all-box {
-    width: 13%;
-}  
     
 
 /* @media (min-width: 300px) {
