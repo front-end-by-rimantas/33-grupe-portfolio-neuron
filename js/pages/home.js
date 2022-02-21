@@ -1,5 +1,6 @@
 // IMPORTS
-
+import { services } from '../components/services/services.js';
+import { servicesData } from '../data/servicesData.js';
 // CODE EXECUTION BELOW THIS COMMENT LINE
 
 /* header start */
@@ -40,6 +41,7 @@ function videoClose() {
 /* counter block end */
 
 /* services block start */
+services('#services_block', servicesData);
 /* services block end */
 
 /* our latest proget start */
