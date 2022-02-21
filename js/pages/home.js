@@ -3,6 +3,20 @@
 // CODE EXECUTION BELOW THIS COMMENT LINE
 
 /* header start */
+window.onscroll = function () {
+    toggleHeader();
+};
+
+var header = document.getElementById('header');
+var headerOffset = header.offsetTop;
+
+function toggleHeader() {
+    if (window.pageYOffset > headerOffset) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+}
 /* header end */
 
 /* hero start */
@@ -14,10 +28,12 @@
 /* about block 2 start */
 function video() {
     let popup = document.getElementById('vidPopup');
-    popup.classList.toggle('show');}
+    popup.classList.toggle('show');
+}
 function videoClose() {
     let popup = document.getElementById('vidPopup');
-    popup.classList.toggle('hide');}
+    popup.classList.toggle('hide');
+}
 /* about block 2 end */
 
 /* counter block start */
