@@ -42,12 +42,12 @@ function videoClose() {
 
 /* services block start */
 
-/*const [serviceErr, serviceMsg] = services('#services_block', servicesData);
+const [serviceErr, serviceMsg] = services('#services_block', servicesData);
 if (serviceErr) {
     console.error(serviceMsg);
 } else {
     console.log(serviceMsg);
-}*/
+}
 /* services block end */
 
 /* our latest proget start */
