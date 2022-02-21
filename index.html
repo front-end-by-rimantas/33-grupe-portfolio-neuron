@@ -31,6 +31,7 @@
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="./css/pages/home.css" />
+        <link rel="stylesheet" type="text/css" href="./css/3rd-party/flaticon.css">
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
@@ -71,7 +72,7 @@
         </div>
         
     
-  <div class="container-fluid block-2">
+  <div id="header" class="container-fluid block-2">
       <div class="row navigation">
           <div class="col-lg-3 logo">
      <a href="index.html"><img src="./img/logo-white.png" alt="logo"></a>
@@ -484,6 +485,56 @@
         <!-- recent block logos end -->
 
         <!-- contact block start -->
+        <div class="container bg-blu">
+            <div class="row main">
+                <div class="col-12 col-lg-5 info-box">
+                    <a href="#" class="main-ico"><i class="flaticon-gps contact-icon"></i></a>
+                    <h2 class="main-title">Contact With Us</h2>
+                    <div class="contacts">
+                    <div class="contact">
+                        <a href="" class="absoliut"><i class="flaticon-place ico"></i></a>
+                        <h3 class="title">Visit Us</h3>
+                        <p class="description">530 Old BUffalo Street  Northwest #205, New York - 3087</p>
+                    </div>
+                    <div class="contact">
+                        <a href="" class="absoliut"><i class="flaticon-phone ico "></i></a>
+                        <h3 class="title">Call Us</h3>
+                      <p class="description">
+                        <a href="#" class="links">+1 (123) -456-7890</a>
+                        <a href="#" class="links">+1 (123) -456-7890</a>
+                      </p>
+                    </div>
+                    <div class="contact">
+                        <a href="" class="absoliut"><i class="flaticon-mail-1 ico"></i></a>
+                        <h3 class="title">Email Us</h3>
+                        <p class="description">
+                            <a href="#" class="links">infoname@gmail.com</a>
+                            <a href="#" class="links">www.yourname.com</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+               <form class="col-12 col-lg-7 form">
+                   <div class="form-row">
+                        <label for="name">Name</label>
+                        <input class="first" id="name" type="text" placeholder="Name" required>
+                         <label for="e-mail">E-mail</label>
+                        <input class="second" id="e-mail" type="text" placeholder="E-mail" required>
+                   </div>
+                   <div class="form-row">
+                           <label for="Phone number">phone Number</label>
+                           <input class="third"  id="phone number" type="text" placeholder="Phone Number" required>
+                          <label for="subject">Subject</label>
+                          <input class="fourth" id="subject" type="text" placeholder="Subject" required>
+                   </div>
+                <div class="form-row form-field">
+                        <label for=""></label>
+                        <textarea class="fifth" placeholder="Your Message Here" rows="5" id="message" name="message" required></textarea>
+                    </div>
+                <button type="submit" class="btn">submit now !</button>
+               </form>
+            </div>
+        </div>
         <!-- contact block logos end -->
 
         <!-- footer start -->

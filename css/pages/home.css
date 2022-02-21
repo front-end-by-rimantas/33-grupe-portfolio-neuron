@@ -7,6 +7,7 @@
 
 /* components */
 @import '../components/button.css';
+@import '../components/form.css';
 @import '../components/header.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
@@ -757,8 +758,234 @@ ties 540 tekstas soka i kita eilute, align left
 /* recent block logos end */
 
 /* contact block start */
+
 /* contact block logos end */
 
+.bg-blu{
+    background: url(/img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .info-box
+{
+    background: #ffffff;
+    padding: 44px 50px 35px;
+    border-radius: 5px;
+    margin-top: -175px;
+    z-index: 5;
+}
+.info-box a{
+    display: block;
+    text-decoration: none;
+}
+.info-box .main-title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+.container .main-ico i{
+    font-size: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(0deg, #09c778, #01a0f9);
+}
+.container .main-ico i::before{
+    font-size: 100px;
+    display: contents;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(0deg, #09c778, #01a0f9);
+}
+.container  .row  .contacts{
+    display: grid;
+    gap: 12px;
+}
+.container  .row  .contacts .contact{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    'ico title'
+    'ico desc';
+ }
+ .contact .absoliut{
+     position: relative;
+ }
+ .contact .links{
+    transition: all 0.5s ease 0s;
+    text-decoration: none ;
+    outline: none ;
+    color: #666666;
+ }
+ .contact .links:hover{
+    color: #09c778;
+ }
+.contact .ico{
+        grid-area: ico;
+        align-self: start;
+        height: 50px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(0deg, #09c778, #01a0f9);
+        margin: 6px 0 0;
+        position: absolute;
+ }
+.contacts .contact .title{
+        grid-area: title;
+        display: block;
+        font-family: 'Poppins', sans-serif;
+    color: #333333;
+    line-height: 26px;
+        font-size: 18px;
+    font-weight: 600; 
+ }
+.contacts .contact .description{
+        grid-area: desc;
+    color: #666666;
+    line-height: 26px;
+    font-size: 16px;
+}
+ .contact i::before{
+     font-size: 30px;
+     display: contents;
+ }
+ .form label{
+    display: none;
+}
+ .form {
+     display: grid;
+     gap: 30px;
+ }
+.form .form-row ::-webkit-input-placeholder{
+    color: #ffffff;
+    opacity: 1;
+ }
+ 
+ .form-row textarea textarea:-moz-placeholder{
+    background: #ffffff;
+    color: #666666;
+ }
+ form .form-row input {
+    color: #ffffff;
+    border: unset;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    background-color: #ffffff4D;
+    font-size: 10px;
+}
+form .btn{
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    height: 60px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    margin-top: 0px;
+    overflow: visible;
+}
+.form .btn:hover {
+    color: #09c778;
+  }
+ .form .form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 30px;
+    grid-template-areas: 
+    'first second'
+    'third fourth'
+    'fifth fifth';
+ }
+ .form .form-row .first{
+     grid-area: first;
+ }
+ .form .form-row .second{
+    grid-area: second;
+}
+.form .form-row .third{
+    grid-area: third;
+}
+.form .form-row .fourth{
+    grid-area: fourth;
+}
+.form .form-row .fifth{
+    grid-area: fifth;
+}
+
+textarea{
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border: unset;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    line-height: 26px;
+    font-size: 10px;
+  }
+  @media (max-width: 767px) {
+    .form .form-row{
+        grid-template-areas:
+        'first'
+        'second'
+        'third'
+        'fourth'
+        'fifth';
+      grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1199px){
+    .info-box .main-title{
+        font-size: 30px;
+    }
+}
+@media (max-width: 991px){
+    .form{
+        gap: 0;
+    }
+    .form .form-row input,
+    .form .form-field textarea,
+    .form  button {
+        margin-top: 30px;
+    }
+    .container  .row  .contacts .contact{
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr;
+}
+.container .info-box{
+    margin-top: -15px;
+}
+}
+@media (max-width: 484px){
+    .container .row .contacts .contact {
+        display: grid;
+        grid-template-columns: 50px 1fr ;
+    }
+    .container .info-box{
+        padding: 30px 30px 20px;
+    }
+    .info-box .main-title{
+        font-size: 20px;
+    }
+    
+}
 /* footer start */
 .container-footer {
     background-image: url(../../img/footer-block/footer-bg.jpg);
