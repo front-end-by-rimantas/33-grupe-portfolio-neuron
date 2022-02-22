@@ -215,23 +215,15 @@
         <!-- about block 2 start -->  
         <div class="container">
             <div class="row">
-                <img class="col-sm-10 col-md-12 col-lg-6 reverse about2-img" src="./img/about-video-part.png">
+                <img class="col-sm-10 col-md-12 col-lg-6 reverse about2-img" src="./img/about2-block/about-video-part.png">
                 <div class="col-sm-10 col-md-12 col-lg-6 reverse">
-                    <h2>We Create The Most Realistic Artificial Intelligence
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!
-                    </p>
+                    <h2 class="about-2-title">We Create The Most Realistic Artificial Intelligence</h2>
+                    <p class="about2-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
+                    <p class="about2-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p>
                     <div class="about2-buttons">
                         <a class="about2_a_lm" href="#" >Learn more</a>
-                        <div class="popup" onclick="video()"> 
-                            <p class="about2_video">></p>
-                            <span class="popupvid" id="vidPopup">
-                                <div class="closeVid" onclick="Close()">X</div>
-                                <iframe class="vid" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"></iframe>
-                            </span>
-                        </div> 
+                        <a class="about2-circle-pulse" onclick='video("vidPopup", "https://www.youtube.com/embed/dQw4w9WgXcQ")'><i class="fa fa-play fa-thin about2-play"></i></a>
+                        <span id="vidPopup"></span>
                     </div>
                 </div> 
             </div>
@@ -239,25 +231,31 @@
         <!-- about block 2 end -->
 
         <!-- counter block start -->
-        <div class="container counter">
-            <div class="row">
-                <div class="col-12 counter-father">
-                    <div class="col-2 counter-text1 counter-txt ml-1">
+        <div class="container counter container-fluid">
+            <div class="row counter-row">
+                <div class="col-12 col-lg-2 col-md-4 ml-md-1 col-sm-10 ml-sm-2 counter-all-box">
+                    <div class="counter-txt-box">
                         <h1 class="counter-h1">6000 +</h1>
-                        <h2 class="counter-h2">Complete Projects</h2>
-                    </div>  
-                    <div class="col-2 counter-text2 counter-txt ml-1">
+                        <h3 class="counter-h3">Complete Projects</h2>
+                    </div>
+                </div>  
+                <div class="col-12 col-lg-2 col-md-4 ml-md-1 col-sm-10 ml-sm-2 counter-all-box">
+                    <div class="counter-txt-box">
                         <h1 class="counter-h1">400 +</h1>
-                        <h2 class="counter-h2">NLP Experts</h2>
-                    </div> 
-                    <div class="col-2 counter-text3 counter-txt ml-1">
+                        <h3 class="counter-h3">NLP Experts</h2>
+                    </div>
+                </div> 
+                <div class="col-12 col-lg-2 col-md-4 ml-md-1 col-sm-10 ml-sm-2 counter-all-box">
+                    <div class="counter-txt-box">
                         <h1 class="counter-h1">3500 +</h1>
-                        <h2 class="counter-h2">Satisfied Clients</h2>
-                    </div> 
-                    <div class="col-2 counter-text4 counter-txt ml-1">
+                        <h3 class="counter-h3">Satisfied Clients</h2>
+                    </div>
+                </div> 
+                <div class="col-12 col-lg-2 col-md-4 ml-md-1 col-sm-10 ml-sm-2 counter-all-box">
+                    <div class="counter-txt-box">
                         <h1 class="counter-h1">8000 +</h1>
-                        <h2 class="counter-h2">Industries served</h2>
-                    </div> 
+                        <h3 class="counter-h3">Industries served</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -519,11 +517,11 @@
                         <label for="name">Name</label>
                         <input class="first" id="name" type="text" placeholder="Name" required>
                          <label for="e-mail">E-mail</label>
-                        <input class="second" id="e-mail" type="text" placeholder="E-mail" required>
+                        <input class="second" id="e-mail" type="email" placeholder="E-mail" required>
                    </div>
                    <div class="form-row">
                            <label for="Phone number">phone Number</label>
-                           <input class="third"  id="phone number" type="text" placeholder="Phone Number" required>
+                           <input class="third"  id="phone number" type="tel" pattern="[0-9]{9}" placeholder="Phone Number" required>
                           <label for="subject">Subject</label>
                           <input class="fourth" id="subject" type="text" placeholder="Subject" required>
                    </div>

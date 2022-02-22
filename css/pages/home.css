@@ -273,23 +273,67 @@ ties 540 tekstas soka i kita eilute, align left
 /* about block 1 end */
 
 /* about block 2 start */
+.about2-p{
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    text-align: left;
+    font-size: 15px;
+    line-height: 26px;
+    padding-bottom: 26px;
+}
+.about-2-title{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color:#333;
+    text-align: left;
+    font-size: 35px;
+    padding-bottom: 35px;
+    padding-top: 65px;
+    text-decoration-color: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);  
+}
+.about-2-title::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    z-index: -1;
+    left: 60px;
+    top: 92px;
+    transform: translateX(-50%);
+}
 .about2-img {
-    width: 90vw;
+    width: 100vw;
+    margin: 0;
 }
 .about2-buttons {
     display: inline-flex;
     gap: 20px;
 }
-.about2_a_lm {
+.about2_a_lm {  
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
-    background-color: var(--blue);
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
     border-radius: 50em;
     height: 40px;
-    width: 140px;
+    width: 150px;
     line-height: 40px;
     text-align: center;
+}
+.about2_a_lm:hover{
+    background: linear-gradient(41deg, #01a0f9, #09c778);;
+    transition: opacity 0,7s;
+    animation: about2-lm 0.7s;
+}
+@keyframes about2-lm {
+    0% {
+        background: linear-gradient(41deg, #09c778, #01a0f9);
+      }
+
+    100% {
+        background: linear-gradient(41deg, #09c778, #01a0f9);
+      }
 }
 .about2_video {
     text-decoration: none;
@@ -302,56 +346,158 @@ ties 540 tekstas soka i kita eilute, align left
     text-align: center;
     line-height: 40px;
 }
-.popup .popupvid {
-    visibility: hidden;
+.about2-video-background{
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: 8999;
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
-.popup .show {
-    visibility: visible;
-}
-.vid {
+.about2-vid{
     position: fixed;
     top: 10vh;
     left: 10vw;
     height: 80vh;
     width: 80vw;
-    z-index: 1;
+    z-index: 9000;
 }
-.closeVid {
+.about2-closeVid{
     position: fixed;
-    right: 8vw;
-    top: 8vh;
-    z-index: 1;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 3em;
+    right: 5vw;
+    top: 5vh;
+    z-index: 9001;
 }
+.about2-circle-pulse {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--info);
+    background-color: transparent;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.about2-circle-pulse:hover {
+    position: relative;
+    animation-name: pulse-blue;
+    border-radius: 50%;
+    animation: pulse-blue 2s infinite;
+}
+
+.about2-play{
+    padding-left: 7px;
+    color: var(--info);
+    /* text-shadow: 3px 0px 0px blue,
+                 -2px 0px 0px blue,
+                 -2px -2.5px 0px blue; */
+    font-size: 25px;
+}
+
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+      }
+    70% {
+        box-shadow: 0 0 0 20px rgba(52, 172, 224, 0);
+      }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+      }
+}
+
+@media (max-width: 1199px){
+    .about-2-title{
+        font-size: 30px;
+        padding-top: 35px;
+        padding-bottom: 26px;
+    }
+    .about-2-title::after {
+        content: '';
+        position: absolute;
+        width: 132px;
+        height: 10px;
+        left: 69px;
+        top: 55px;
+    }
+    .about2-p{
+        line-height: 26px;
+        padding-bottom: 26px;
+    }
+}
+@media (max-width: 484px){
+    .about-2-title{
+        font-size: 20px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .about-2-title::after {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 10px;
+        left: 60px;
+        top: 50px;
+    }
+    .about2-p{
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
+}
+
+
 /* about block 2 end */
 
 /* counter block start */
 .counter {
-    background-image: url('../../img/counter\ bckgrnd.png');
-    background-size: cover;
-    height: 40%;
+    background: linear-gradient(180deg, var(--teal) 30%, var(--blue));
+    height: auto;
     width: 100%;
 }
-.counter-txt {
+.counter-h1, .counter-h3 {
     color: var(--white);
-}
-.counter-father {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 2.5em;
-}
-.counter-text1 {
-    margin-left: 10%;
-}
-.counter-text2 {
-    margin-left: 10%;
-}
+} 
 .counter-h1 {
-    font-size: 2em;
+    font-size: 45px;
+    font-weight: 600;
+    width: 150px;
+} 
+.counter-h3 {
+    font-size: 18px;
+    width: 150px;
+    font-weight: 600;
+} 
+.counter-all-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+} 
+.counter-txt-box {
+    background-image: url('../../img/counter/debeselis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 220px;
+    padding: 50px;
 }
-.counter-h2 {
-    font-size: 1.3em;
-    font-weight: 500;
-}
+
+/* @media (max-width: 400px) and (min-width: 320px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 15%;
+    }
+} 
+@media (min-width: 401px) and (max-width: 575px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 25%;
+    }
+}  */
 
 /* counter block end */
 
@@ -767,24 +913,35 @@ ties 540 tekstas soka i kita eilute, align left
     background-repeat: no-repeat;
 }
 .container .info-box
-{
-    background: #ffffff;
+{   background: #ffffff;
     padding: 44px 50px 35px;
     border-radius: 5px;
     margin-top: -175px;
-    z-index: 5;
 }
 .info-box a{
     display: block;
     text-decoration: none;
 }
 .info-box .main-title{
+    position: relative;
+    z-index: 1;
     font-size: 35px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     color: #333333;
+}
+.info-box .main-title::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
+    top: 26px;
+    z-index: -1;
+    left: 18%;
+    transform: translateX(-50%);
 }
 .container .main-ico i{
     font-size: 100px;
@@ -865,6 +1022,7 @@ ties 540 tekstas soka i kita eilute, align left
 .form .form-row ::-webkit-input-placeholder{
     color: #ffffff;
     opacity: 1;
+    font-size: 16px;
  }
  
  .form-row textarea textarea:-moz-placeholder{
@@ -881,7 +1039,7 @@ ties 540 tekstas soka i kita eilute, align left
     box-shadow: none;
     resize: none;
     background-color: #ffffff4D;
-    font-size: 10px;
+    font-size: 16px;
 }
 form .btn{
     width: 100%;
@@ -926,7 +1084,6 @@ form .btn{
 .form .form-row .fifth{
     grid-area: fifth;
 }
-
 textarea{
     background: rgba(255, 255, 255, 0.3);
     color: #ffffff;
@@ -955,6 +1112,10 @@ textarea{
     .info-box .main-title{
         font-size: 30px;
     }
+    .info-box .main-title::before{
+        left: 26%;
+        width: 140px;
+    }
 }
 @media (max-width: 991px){
     .form{
@@ -972,6 +1133,15 @@ textarea{
 .container .info-box{
     margin-top: -15px;
 }
+.info-box .main-title::before{
+    left: 12%;
+}
+@media (max-width: 767px){
+    .info-box .main-title::before{
+        left: 17%;
+        top: 22px;
+    }
+}
 }
 @media (max-width: 484px){
     .container .row .contacts .contact {
@@ -984,9 +1154,15 @@ textarea{
     .info-box .main-title{
         font-size: 20px;
     }
-    
+    .info-box .main-title::before{
+        left: 19%;
+        top: 15px;
+    }
 }
 /* footer start */
+<<<<<<< HEAD
+/* footer end */ 
+=======
 .container-footer {
     background-image: url(../../img/footer-block/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -1123,3 +1299,4 @@ textarea{
     }
 }
 /* footer end */
+>>>>>>> develop
