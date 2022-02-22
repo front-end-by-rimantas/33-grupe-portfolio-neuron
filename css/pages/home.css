@@ -273,7 +273,7 @@ ties 540 tekstas soka i kita eilute, align left
 /* about block 1 end */
 
 /* about block 2 start */
-.about2-p{
+.about2-p {
     font-family: 'Poppins', sans-serif;
     color: #666;
     text-align: left;
@@ -281,15 +281,19 @@ ties 540 tekstas soka i kita eilute, align left
     line-height: 26px;
     padding-bottom: 26px;
 }
-.about-2-title{
+.about-2-title {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    color:#333;
+    color: #333;
     text-align: left;
     font-size: 35px;
     padding-bottom: 35px;
     padding-top: 65px;
-    text-decoration-color: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);  
+    text-decoration-color: linear-gradient(
+        90deg,
+        var(--blue) 45%,
+        var(--teal) 60%
+    );
 }
 .about-2-title::after {
     content: '';
@@ -310,7 +314,7 @@ ties 540 tekstas soka i kita eilute, align left
     display: inline-flex;
     gap: 20px;
 }
-.about2_a_lm {  
+.about2_a_lm {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
@@ -321,19 +325,19 @@ ties 540 tekstas soka i kita eilute, align left
     line-height: 40px;
     text-align: center;
 }
-.about2_a_lm:hover{
-    background: linear-gradient(41deg, #01a0f9, #09c778);;
-    transition: opacity 0,7s;
+.about2_a_lm:hover {
+    background: linear-gradient(41deg, #01a0f9, #09c778);
+    transition: opacity 0, 7s;
     animation: about2-lm 0.7s;
 }
 @keyframes about2-lm {
     0% {
         background: linear-gradient(41deg, #09c778, #01a0f9);
-      }
+    }
 
     100% {
         background: linear-gradient(41deg, #09c778, #01a0f9);
-      }
+    }
 }
 .about2_video {
     text-decoration: none;
@@ -346,7 +350,7 @@ ties 540 tekstas soka i kita eilute, align left
     text-align: center;
     line-height: 40px;
 }
-.about2-video-background{
+.about2-video-background {
     position: fixed;
     top: 0vh;
     left: 0vw;
@@ -354,9 +358,8 @@ ties 540 tekstas soka i kita eilute, align left
     width: 100vw;
     z-index: 8999;
     background-color: rgba(0, 0, 0, 0.8);
-
 }
-.about2-vid{
+.about2-vid {
     position: fixed;
     top: 10vh;
     left: 10vw;
@@ -364,7 +367,7 @@ ties 540 tekstas soka i kita eilute, align left
     width: 80vw;
     z-index: 9000;
 }
-.about2-closeVid{
+.about2-closeVid {
     position: fixed;
     color: var(--light);
     font-weight: bold;
@@ -390,7 +393,7 @@ ties 540 tekstas soka i kita eilute, align left
     animation: pulse-blue 2s infinite;
 }
 
-.about2-play{
+.about2-play {
     padding-left: 7px;
     color: var(--info);
     /* text-shadow: 3px 0px 0px blue,
@@ -402,17 +405,17 @@ ties 540 tekstas soka i kita eilute, align left
 @keyframes pulse-blue {
     0% {
         box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
-      }
+    }
     70% {
         box-shadow: 0 0 0 20px rgba(52, 172, 224, 0);
-      }
+    }
     100% {
         box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
-      }
+    }
 }
 
-@media (max-width: 1199px){
-    .about-2-title{
+@media (max-width: 1199px) {
+    .about-2-title {
         font-size: 30px;
         padding-top: 35px;
         padding-bottom: 26px;
@@ -425,13 +428,13 @@ ties 540 tekstas soka i kita eilute, align left
         left: 69px;
         top: 55px;
     }
-    .about2-p{
+    .about2-p {
         line-height: 26px;
         padding-bottom: 26px;
     }
 }
-@media (max-width: 484px){
-    .about-2-title{
+@media (max-width: 484px) {
+    .about-2-title {
         font-size: 20px;
         padding-top: 35px;
         padding-bottom: 15px;
@@ -444,12 +447,11 @@ ties 540 tekstas soka i kita eilute, align left
         left: 60px;
         top: 50px;
     }
-    .about2-p{
+    .about2-p {
         line-height: 26px;
         padding-bottom: 15px;
     }
 }
-
 
 /* about block 2 end */
 
@@ -459,24 +461,25 @@ ties 540 tekstas soka i kita eilute, align left
     height: auto;
     width: 100%;
 }
-.counter-h1, .counter-h3 {
+.counter-h1,
+.counter-h3 {
     color: var(--white);
-} 
+}
 .counter-h1 {
     font-size: 45px;
     font-weight: 600;
     width: 150px;
-} 
+}
 .counter-h3 {
     font-size: 18px;
     width: 150px;
     font-weight: 600;
-} 
+}
 .counter-all-box {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-} 
+}
 .counter-txt-box {
     background-image: url('../../img/counter/debeselis.png');
     background-size: contain;
@@ -907,22 +910,22 @@ ties 540 tekstas soka i kita eilute, align left
 
 /* contact block logos end */
 
-.bg-blu{
+.bg-blu {
     background: url(/img/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container .info-box
-{   background: #ffffff;
+.container .info-box {
+    background: #ffffff;
     padding: 44px 50px 35px;
     border-radius: 5px;
     margin-top: -175px;
 }
-.info-box a{
+.info-box a {
     display: block;
     text-decoration: none;
 }
-.info-box .main-title{
+.info-box .main-title {
     position: relative;
     z-index: 1;
     font-size: 35px;
@@ -932,7 +935,7 @@ ties 540 tekstas soka i kita eilute, align left
     font-family: 'Poppins', sans-serif;
     color: #333333;
 }
-.info-box .main-title::before{
+.info-box .main-title::before {
     content: '';
     position: absolute;
     width: 120px;
@@ -943,14 +946,14 @@ ties 540 tekstas soka i kita eilute, align left
     left: 18%;
     transform: translateX(-50%);
 }
-.container .main-ico i{
+.container .main-ico i {
     font-size: 100px;
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(0deg, #09c778, #01a0f9);
 }
-.container .main-ico i::before{
+.container .main-ico i::before {
     font-size: 100px;
     display: contents;
     background-clip: text;
@@ -958,78 +961,78 @@ ties 540 tekstas soka i kita eilute, align left
     color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(0deg, #09c778, #01a0f9);
 }
-.container  .row  .contacts{
+.container .row .contacts {
     display: grid;
     gap: 12px;
 }
-.container  .row  .contacts .contact{
+.container .row .contacts .contact {
     display: grid;
     grid-template-columns: 50px 1fr;
     gap: 0px 0px;
-    grid-template-areas: 
-    'ico title'
-    'ico desc';
- }
- .contact .absoliut{
-     position: relative;
- }
- .contact .links{
+    grid-template-areas:
+        'ico title'
+        'ico desc';
+}
+.contact .absoliut {
+    position: relative;
+}
+.contact .links {
     transition: all 0.5s ease 0s;
-    text-decoration: none ;
-    outline: none ;
+    text-decoration: none;
+    outline: none;
     color: #666666;
- }
- .contact .links:hover{
+}
+.contact .links:hover {
     color: #09c778;
- }
-.contact .ico{
-        grid-area: ico;
-        align-self: start;
-        height: 50px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: rgba(0, 0, 0, 0);
-        background-image: linear-gradient(0deg, #09c778, #01a0f9);
-        margin: 6px 0 0;
-        position: absolute;
- }
-.contacts .contact .title{
-        grid-area: title;
-        display: block;
-        font-family: 'Poppins', sans-serif;
+}
+.contact .ico {
+    grid-area: ico;
+    align-self: start;
+    height: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(0deg, #09c778, #01a0f9);
+    margin: 6px 0 0;
+    position: absolute;
+}
+.contacts .contact .title {
+    grid-area: title;
+    display: block;
+    font-family: 'Poppins', sans-serif;
     color: #333333;
     line-height: 26px;
-        font-size: 18px;
-    font-weight: 600; 
- }
-.contacts .contact .description{
-        grid-area: desc;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contacts .contact .description {
+    grid-area: desc;
     color: #666666;
     line-height: 26px;
     font-size: 16px;
 }
- .contact i::before{
-     font-size: 30px;
-     display: contents;
- }
- .form label{
+.contact i::before {
+    font-size: 30px;
+    display: contents;
+}
+.form label {
     display: none;
 }
- .form {
-     display: grid;
-     gap: 30px;
- }
-.form .form-row ::-webkit-input-placeholder{
+.form {
+    display: grid;
+    gap: 30px;
+}
+.form .form-row ::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1;
     font-size: 16px;
- }
- 
- .form-row textarea textarea:-moz-placeholder{
+}
+
+.form-row textarea textarea:-moz-placeholder {
     background: #ffffff;
     color: #666666;
- }
- form .form-row input {
+}
+form .form-row input {
     color: #ffffff;
     border: unset;
     border-radius: 5px;
@@ -1038,10 +1041,10 @@ ties 540 tekstas soka i kita eilute, align left
     outline: none;
     box-shadow: none;
     resize: none;
-    background-color: #ffffff4D;
+    background-color: #ffffff4d;
     font-size: 16px;
 }
-form .btn{
+form .btn {
     width: 100%;
     background: #ffffff;
     border: none;
@@ -1059,32 +1062,32 @@ form .btn{
 }
 .form .btn:hover {
     color: #09c778;
-  }
- .form .form-row{
+}
+.form .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 30px;
-    grid-template-areas: 
-    'first second'
-    'third fourth'
-    'fifth fifth';
- }
- .form .form-row .first{
-     grid-area: first;
- }
- .form .form-row .second{
+    grid-template-areas:
+        'first second'
+        'third fourth'
+        'fifth fifth';
+}
+.form .form-row .first {
+    grid-area: first;
+}
+.form .form-row .second {
     grid-area: second;
 }
-.form .form-row .third{
+.form .form-row .third {
     grid-area: third;
 }
-.form .form-row .fourth{
+.form .form-row .fourth {
     grid-area: fourth;
 }
-.form .form-row .fifth{
+.form .form-row .fifth {
     grid-area: fifth;
 }
-textarea{
+textarea {
     background: rgba(255, 255, 255, 0.3);
     color: #ffffff;
     border: unset;
@@ -1096,73 +1099,70 @@ textarea{
     resize: none;
     line-height: 26px;
     font-size: 10px;
-  }
-  @media (max-width: 767px) {
-    .form .form-row{
+}
+@media (max-width: 767px) {
+    .form .form-row {
         grid-template-areas:
-        'first'
-        'second'
-        'third'
-        'fourth'
-        'fifth';
-      grid-template-columns: 1fr;
+            'first'
+            'second'
+            'third'
+            'fourth'
+            'fifth';
+        grid-template-columns: 1fr;
     }
 }
-@media (max-width: 1199px){
-    .info-box .main-title{
+@media (max-width: 1199px) {
+    .info-box .main-title {
         font-size: 30px;
     }
-    .info-box .main-title::before{
+    .info-box .main-title::before {
         left: 26%;
         width: 140px;
     }
 }
-@media (max-width: 991px){
-    .form{
+@media (max-width: 991px) {
+    .form {
         gap: 0;
     }
     .form .form-row input,
     .form .form-field textarea,
-    .form  button {
+    .form button {
         margin-top: 30px;
     }
-    .container  .row  .contacts .contact{
-        display: grid;
-        grid-template-columns: 50px 1fr 1fr;
-}
-.container .info-box{
-    margin-top: -15px;
-}
-.info-box .main-title::before{
-    left: 12%;
-}
-@media (max-width: 767px){
-    .info-box .main-title::before{
-        left: 17%;
-        top: 22px;
-    }
-}
-}
-@media (max-width: 484px){
     .container .row .contacts .contact {
         display: grid;
-        grid-template-columns: 50px 1fr ;
+        grid-template-columns: 50px 1fr 1fr;
     }
-    .container .info-box{
+    .container .info-box {
+        margin-top: -15px;
+    }
+    .info-box .main-title::before {
+        left: 12%;
+    }
+    @media (max-width: 767px) {
+        .info-box .main-title::before {
+            left: 17%;
+            top: 22px;
+        }
+    }
+}
+@media (max-width: 484px) {
+    .container .row .contacts .contact {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+    }
+    .container .info-box {
         padding: 30px 30px 20px;
     }
-    .info-box .main-title{
+    .info-box .main-title {
         font-size: 20px;
     }
-    .info-box .main-title::before{
+    .info-box .main-title::before {
         left: 19%;
         top: 15px;
     }
 }
 /* footer start */
-<<<<<<< HEAD
-/* footer end */ 
-=======
 .container-footer {
     background-image: url(../../img/footer-block/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -1299,4 +1299,3 @@ textarea{
     }
 }
 /* footer end */
->>>>>>> develop
