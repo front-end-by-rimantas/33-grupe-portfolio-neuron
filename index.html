@@ -374,18 +374,19 @@
         <!-- our latest proget end -->
 
         <!-- subscribe block start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12 col-md-8 col-sm-10 tevas subscribe-block">
+        <div class="container subscribe-container">
+            <div class="row subscribe-rows">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-10 subscribe-block">
                     <img src="./img/envelope.png" alt="envelope" class="subscribe-img">
                     <div class=subscribe-text>
-                        <h1 class="big-title subscribe-h1">Don't Miss Our News and Updates</h1>
-                        <form label="email">
-                            <input class="subscribe-forma" type="email" name="email" placeholder="Enter your email" required>
+                        <h1 class="subscribe-h1">Don't Miss Our News and Updates!</h1>
+                        <form>
+                            <label for="subscribe-forma">Email</label>
+                            <input id="subscribe-forma" type="email" name="email" placeholder="Enter your email" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                </button>
                             </input>
-                            <button type="submit" class="subscribe-btn">
-                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                            </button>
                         </form>
                     </div>
                 </div>
