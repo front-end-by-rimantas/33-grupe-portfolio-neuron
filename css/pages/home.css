@@ -511,6 +511,7 @@ ties 540 tekstas soka i kita eilute, align left
     width: 65%;
     margin-top: 10%;
     font-weight: 550;
+    text-align: left;
 }
 
 ::placeholder {
