@@ -455,32 +455,49 @@ ties 540 tekstas soka i kita eilute, align left
 
 /* counter block start */
 .counter {
-    background-image: url('../../img/counter\ bckgrnd.png');
-    background-size: cover;
-    height: 40%;
+    background: linear-gradient(180deg, var(--teal) 30%, var(--blue));
+    height: auto;
     width: 100%;
 }
-.counter-txt {
+.counter-h1, .counter-h3 {
     color: var(--white);
-}
-.counter-father {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 2.5em;
-}
-.counter-text1 {
-    margin-left: 10%;
-}
-.counter-text2 {
-    margin-left: 10%;
-}
+} 
 .counter-h1 {
-    font-size: 2em;
+    font-size: 45px;
+    font-weight: 600;
+    width: 150px;
+} 
+.counter-h3 {
+    font-size: 18px;
+    width: 150px;
+    font-weight: 600;
+} 
+.counter-all-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+} 
+.counter-txt-box {
+    background-image: url('../../img/counter/debeselis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 220px;
+    padding: 50px;
 }
-.counter-h2 {
-    font-size: 1.3em;
-    font-weight: 500;
-}
+
+/* @media (max-width: 400px) and (min-width: 320px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 15%;
+    }
+} 
+@media (min-width: 401px) and (max-width: 575px) {
+
+    .counter-all-box .counter-txt-box {
+        margin-left: 25%;
+    }
+}  */
 
 /* counter block end */
 
@@ -1143,6 +1160,9 @@ textarea{
     }
 }
 /* footer start */
+<<<<<<< HEAD
+/* footer end */ 
+=======
 .container-footer {
     background-image: url(../../img/footer-block/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -1279,3 +1299,4 @@ textarea{
     }
 }
 /* footer end */
+>>>>>>> develop
