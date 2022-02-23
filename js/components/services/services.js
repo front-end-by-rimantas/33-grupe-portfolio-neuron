@@ -24,10 +24,10 @@ function services(selector, data) {
             return false;
         }
 
-        /*const keys = Object.keys(service);
+        const keys = Object.keys(service);
         if (keys.length < 3 || keys.length > 4) {
             return false;
-        }*/
+        }
         return true;
     };
 
