@@ -904,7 +904,42 @@ ties 540 tekstas soka i kita eilute, align left
 /* recent block logos end */
 
 /* contact block start */
-
+.bg-grey{
+    background-color:  #eff1f7;
+}
+.blog-cards{
+    display: grid;
+    gap: 30px;
+}
+.blog-cards > .blog-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'img'
+      'tags'
+      'short-title'
+      'desc'
+      'btn';
+      padding: 30px;
+      background-color: #09c778;
+      border-radius: 7px;
+}
+.blog-cards > .blog-card > .icon{
+grid-area: img;
+width: 100%;
+}
+.blog-cards > .blog-card > li{
+    grid-area: tags;
+}
+.blog-cards > .blog-card > .short-title{
+    grid-area: short-title;
+}
+.blog-cards > .blog-card > p{
+    grid-area: desc;
+}
+.blog-cards > .blog-card > button{
+    grid-area: btn;
+}
 /* contact block logos end */
 
 .bg-blu{
