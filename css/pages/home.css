@@ -677,14 +677,10 @@ label {
 }
 
 #subscribe-forma {
-    width: 100%;
-    margin-top: 5%;
+    width: 80%;
     border: none;
     border-bottom: 0.5px solid grey;
     line-height: 3em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .subscribe-btn  {
@@ -695,6 +691,12 @@ label {
     height: 34px;
 }
 
+.flex-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 *:focus {
     outline: none;
@@ -706,7 +708,7 @@ label {
 }
 
 .subscribe-img {
-    width: 25%;
+    width: 20%;
     height: 65%;
     margin-top: 5%;
 }
@@ -719,7 +721,7 @@ label {
     width: 170px;
     height: 10px;
     background: linear-gradient(90deg, var(--blue) 45%, var(--teal) 60%);
-    top:30%;
+    top: 30%;
     left: 38.3%;
     z-index: -1;
 }
@@ -728,45 +730,51 @@ label {
     opacity: 80%;
     transition: all 0.7s ease 0s;
 }
-@media (min-width: 991px) {
+@media (min-width: 300px) {
     .subscribe-block {
+        display: flex;
         flex-direction: column;
         gap:20px;
-        padding-left: 40px;
-        padding-top: 30px;
+        padding-left: 20px;
         box-shadow: 2px 10px 50px rgb(158 158 158 / 25%);
+        width: 40%;
     }
     .subscribe-h1 {
-        margin-top: 0;
-        padding-top: 10px;
+       font-size: 18px;
+       margin-top:0;
+       margin-bottom: 10%;
+       width:100%;
     }
     .subscribe-img {
-        width: 22%;
-        height: 35%;
+        width: 40%;
+        height: 30%;
     }
     .subscribe-text:before {
-        top:58%;
-        left: 6.2%;
+        top:57%;
+        left: 7.3%;
+        width: 120px;
     }
     #subscribe-forma {
         width: 80%;
-        margin-bottom: 10%;
+        margin-bottom: 0;
         margin-left: -38px;
         position: relative;
     }
     ::placeholder {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .subscribe-btn {
-        background: linear-gradient(41deg, #09c778, #01a0f9);
-        border: none;
+        border-radius: 17px;
+        width: 34px;
+        height: 34px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 16%;
+        right: 10%;
     }
 
 }
-@media (max-width: 991px) and (min-width: 768px) {
+/* 
+ @media (max-width: 991px) and (min-width: 768px) {
     .subscribe-block {
         flex-direction: column;
         gap:20px;
@@ -881,48 +889,8 @@ label {
         bottom: 0;
         right: 0;
     }
-}
-@media (max-width: 450px) and (min-width: 300px) {
-    .subscribe-block {
-        flex-direction: column;
-        gap:20px;
-        padding-left: 20px;
-        box-shadow: 2px 10px 50px rgb(158 158 158 / 25%);
-        width: 30%;
-    }
-    .subscribe-h1 {
-       font-size: 20px;
-       margin-top:0;
-       margin-bottom: 10%;
-       width:100%;
-    }
-    .subscribe-img {
-        width: 38%;
-        height: 30%;
-    }
-    .subscribe-text:before {
-        top:57%;
-        left: 7.3%;
-        width: 140px;
-    }
-    #subscribe-forma {
-        width: 80%;
-        margin-bottom: 0;
-        margin-left: -38px;
-        position: relative;
-    }
-    ::placeholder {
-        font-size: 1em;
-    }
-    .subscribe-btn {
-        bottom: 0;
-        right: 0;
-        border-radius: 17px;
-        width: 34px;
-        height: 34px;
-    }
-
-}
+} 
+ */
 
 /* subscribe block end */
 
@@ -933,14 +901,49 @@ label {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.eiliu-karaliene {
-    display: grid;
-    gap: 20px;
+
+@media (min-width: 300px) and (max-width:578px) {
+    .logo-img {
+        width: 30%;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .dezute {
+        margin-left: 20px;
+    }
 }
-.eiliu-karaliene > .logo-row {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    padding: 30px;
+@media (min-width: 579px) and (max-width: 781px){
+    .logo-img {
+        width: 30%;
+        height: auto;
+        padding: 30px 20px;
+    }
+    .dezute {
+        margin-left: 50px;
+    }
+}
+@media (min-width: 780px) and (max-width: 990px){
+    .logo-img {
+        width: 30%;
+        height: auto;
+        padding: 20px 20px;
+    }
+    .dezute {
+        margin-left: 20px;
+    }
+}
+@media (min-width: 1000px) {
+    .logo-img {
+        width: 170px;
+        height: auto;
+        padding: 20px 20px;
+    }
+    .dezute {
+        margin-left: 50px;
+    }
+    .logo-img-1 {
+        margin-left: 70px;
+    }
 }
 
 /* logo block end */
